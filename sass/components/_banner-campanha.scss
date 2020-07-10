@@ -1,0 +1,46 @@
+.banner-rede {
+
+    background-color: $color-red-1;
+    padding: 5rem;
+
+    &__logo {
+        width: 75%;
+        float: right;
+
+        @include respond(tab-port) { 
+            width: 50%;
+            float: none;
+            margin-left: 25%; 
+            margin-bottom: -4rem;
+        }
+
+    }
+
+    &__heading {
+        color: $color-white;
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 4.2rem;
+        font-weight: 500;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 1.6rem;
+    }
+
+    &__text {
+        color: $color-white;
+        font-family: "Saira", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
+
+            &,
+            &:link,
+            &:visited {
+            color: $color-white;
+        }
+    }
+}

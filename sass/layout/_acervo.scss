@@ -1,0 +1,29 @@
+.acervo {
+    margin: 8rem 3rem;
+}
+
+.acervo-homenagem{
+
+    margin-top: 8rem;
+
+    @include respond(tab-port) { 
+        margin-top: 4rem;
+    }
+
+    &__heading {
+        align-self: center;
+        color: $color-red-1;
+        font-family: "Saira Condensed", sans-serif;
+        letter-spacing: 0.32px;
+        font-size: 3.2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        @include respond(tab-port) { 
+            padding: 3rem;
+            font-size: 4.2rem;
+            line-height: 1;
+        }
+    }
+
+}

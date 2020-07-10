@@ -1,0 +1,36 @@
+@import "abstract/mixins";
+
+@import "abstract/variables";
+@import "base/default";
+
+
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/banner";
+@import "components/banner-campanha";
+@import "components/bg-video";
+@import "components/botoes";
+@import "components/card";
+@import "components/card-texto";
+@import "components/iframe";
+@import "components/menu-mobile";
+@import "components/slider";
+
+
+@import "layout/acervo";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/textos";
+@import "layout/textos-grid";
+
+@import "pages/abriga";
+@import "pages/campanha";
+@import "pages/home";
+@import "pages/mostras";
+@import "pages/programacao";
+@import "pages/sessao";
+@import "pages/sobre";
+
+

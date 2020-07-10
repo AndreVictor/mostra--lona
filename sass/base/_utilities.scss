@@ -1,0 +1,15 @@
+.u-margin-buttom-big {margin-bottom: 8rem !important;}
+.u-margin-buttom-medium {margin-bottom: 4rem !important;}
+.u-margin-buttom-small {margin-bottom: 1.5rem !important;}
+
+.u-margin-top-big {margin-bottom: 8rem !important;}
+.u-margin-top-huge {margin-bottom: 10rem !important;}
+
+.u-align-text {text-align: center !important;}
+.u-align-text-left {text-align: left;}
+
+.padding-mobile {
+    @include respond(phone) {
+        padding: 0 3rem !important;   
+    }
+}

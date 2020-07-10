@@ -1,0 +1,114 @@
+.banner-mostras {
+    margin-top: 8rem;  
+    margin-bottom: 3rem;
+    position: relative;
+
+    @include respond(tab-port) { 
+        margin-top: 0;
+    }
+
+    &__content {
+        height: 42rem;
+        border-radius: 5px;
+
+        &--1 {
+            background-image: url(../img/mostras/atravessamentos_site.jpg);
+            background-size: cover;
+        }
+
+        &--2 {
+            background-image: url(../img/mostras/acervo_site.jpg);
+            background-size: cover;
+        }
+
+        &--3 {
+            background-image: url(../img/mostras/homenagem_site.jpg);
+            background-size: cover;
+        }
+
+        @include respond(tab-port) { 
+            width: 100%;
+        }
+
+    }
+    &__heading {
+        position: absolute;
+        top: 32rem;
+        left: 3rem;
+        font-family: "Saira Condensed", sans-serif;
+        font-weight: 600;
+        font-size: 5.6rem;
+        color: $color-white;
+
+        @include respond(tab-port) { 
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            line-height: 1;
+        }
+    }
+
+
+}
+
+.text-mostras {
+
+    @include respond(tab-port) { 
+        padding: 3rem;
+    }
+
+    &__bar-box {
+        margin: 3rem 1rem;
+        
+        @include respond(tab-port) { 
+            position: relative;
+            height: 4.2rem;
+        }
+
+    }
+
+    &__bar{
+        display: block;
+        width: .5rem;
+        height: 4.2rem;
+        background-color: $color-red-1;
+        transform: rotate(-35deg);
+        
+        @include respond(tab-port) { 
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%), rotate(-35deg);
+        }
+    }
+
+    &__heading-film {
+        display: inline-block;
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-black;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
+    }
+
+    &__text-tec {
+        display: inline-block;
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-black;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
+
+    }
+}
+
+.sessao-mostras {
+    padding-bottom: 8rem;
+}

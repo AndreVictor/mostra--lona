@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37853607-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37853607-3');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mostra cinemas e territórios MLB" />
+    <meta
+      name="keywords"
+      content="cinema, mostra, luta, mlb, ocupação, territorios, guerrilha, cinema latino americano, cinema do sul"
+    />
+    <meta name="author" content="André Victor" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700;800;900&family=Saira:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style20200703131108.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/lona-favicon.png" />
+
+    <title>LONA — Mostra Cinemas e Territórios</title>
+  </head>
+  <body>
+    <section class="header-top__nav-top">
+      <div class="header-top__text">
+        <p>
+          Realização
+          <a href="https://www.mlbbrasil.org/" class="header-top__mlb-link"
+            >MLB - Movimento de Luta nos Bairros, Vilas e Favelas</a
+          >
+        </p>
+      </div>
+      <div class="header-top__icons-box">
+        <a href="https://www.instagram.com/movimento_de_luta_nos_bairros/" class="header-top__icons-box--icon fab fa-instagram"></a>
+        <a href="https://pt-br.facebook.com/mlbrio/" class="header-top__icons-box--icon fab fa-facebook-f"></a>
+      </div>
+    </section>
+
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__logo-box">
+          <a href="index.html" class="navigation__logo-text">LONA</a>
+        </div>
+        <div class="navigation__bar-box">
+          <span class="navigation__bar">&nbsp;</span>
+        </div>
+        <div class="navigation__mostra">
+          <span class="navigation__mostra--1">Mostra Cinemas </span>
+          <span class="navigation__mostra--2">e Territórios </span>
+        </div>
+        <ul class="navigation__nav">
+          <li class="navigation__item">
+            <a href="acervo.html" class="navigation__link">acervo</a>
+          </li>
+          <li class="navigation__item">
+            <a href="programacao.html" class="navigation__link">debates</a>
+          </li>
+          <li class="navigation__item">
+            <a href="lona-abriga.html" class="navigation__link">lona abriga</a>
+          </li>
+          <li class="navigation__item">
+            <input type="checkbox" class="navigation__dropdown-checkbox" id="dropdown-toggle">
+            <label for="dropdown-toggle" class="navigation__dropdown-button">
+            <span class="navigation__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down dropdown-icon"></i></span>
+            </label>
+                <ul class="navigation__dropdown-nav" id="dropdown">
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras.html" class="navigation__dropdown-link">mostra atravessamentos</a>
+                  </li>
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras/homenagem.html" class="navigation__dropdown-link">programa homenagem</a>
+                  </li>
+                </ul>
+          </li>
+          <li class="navigation__item">
+            <a href="campanha.html" class="navigation__link">rede solidária</a>
+          </li>
+          <li class="navigation__item">
+            <a href="sobre.html" class="navigation__link">sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-mobile">
+        <input type="checkbox" class="navigation-mobile__checkbox" id="navi-toggle">
+  
+        <label for="navi-toggle" class="navigation-mobile__button">
+          <span class="navigation-mobile__icon">&nbsp;</span>
+        </label>
+  
+        <div class="navigation-mobile__background">&nbsp;</div>
+
+        <div class="navigation-mobile__nav">
+          <ul class="navigation-mobile__list">
+            <li class="navigation-mobile__item">
+              <a href="acervo.html" class="navigation-mobile__link">acervo</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="programacao.html" class="navigation-mobile__link">debates</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="lona-abriga.html" class="navigation-mobile__link">lona abriga</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="campanha.html" class="navigation-mobile__link">rede solidária</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="sobre.html" class="navigation-mobile__link">sobre</a>
+            </li>
+
+                        
+            <li class="navigation-mobile__item">
+              <input type="checkbox" class="navigation-mobile__dropdown-checkbox" id="dropdown-mobile-toggle">
+              <label for="dropdown-mobile-toggle" class="navigation-mobile__dropdown-button">
+              <span class="navigation-mobile__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down navigation-mobile__dropdown-icon"></i></span>
+              </label>
+                  <ul class="navigation-mobile__dropdown-nav">
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras.html" class="navigation-mobile__dropdown-link">mostra atravessamentos</a>
+                    </li>
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras/homenagem.html" class="navigation-mobile__dropdown-link">programa homenagem</a>
+                    </li>
+                  </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+      <section class="sessao">
+
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates iframe__video--encerramento"
+            src="https://www.youtube.com/embed/h4ABQK55FjA"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">DEBATE — Encerramento \ sex, 26 — jun, 16h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">ALBERTO ALVARES (Realizador) <br/>
+              Genito Gomes Kaiowá (Liderança Guarani-Kaiowá e realizador) <br/>
+              Jhon Nara Gomes (liderança Guarani-kaiowá e realizadora) <br/>
+              Edgar Kanaykõ (Etnofotógrafo) </h1>
+              </h1>
+            <p class="programacao__text-resume">
+              <strong>Convidado: ALBERTO ALVARES (Realizador)</strong><br/>
+              Cineasta indígena da etnia Guarani Nhandewa, nascido em aldeia Porto Lindo, Mato Grosso do Sul. É ator, professor e tradutor de Guarani formado pela UFMG. Vive no Rio de Janeiro desde 2010, período em que começou a se dedicar ao audiovisual como realizador e formador. Realiza seus projetos a partir do Laboratório do Filme Etnográfco - UFF, do Museu do Índio/FUNAI, do Observatório da Educação Escolar Indígena - OEEI/UFMG e do Saberes Indígenas na Escola - SIE/UFMG. É realizador dos filmesTekowe Nhenpyrun – A Origem da Alma,Ywy Jahe’o – O choro daTerra,Tape Ypy E’y – Caminhos do Tempo,Karai ha’egui Kunha Karai Ete – OsVerdadeiros Líderes Espirituais,Arandu Nhembo’e – Em Busca do Saber,A Procura deAratu,Um Pé na Aldeia e Outro no Mundo,Nhema’en Tenondere –Além do Olhar,Yvi.<br/>
+              <br/>
+              <strong>Convidado: Genito Gomes Kaiowá (Liderança Guarani-Kaiowá e realizador) </strong><br/>
+              Liderança da aldeia Tekoha Guaiviry e membro do Conselho do Aty Guasu, a grande assembleia indígena, Genito é um dos realizadores dos filmes Ava Marangatu e Ava Yvy Vera – A Terra do Povo do Raio. Vencedor do VIII CachoeiraDoc, o documentário retrata o cotidiano de uma aldeia de retomada, rodeada por um latifúndio de soja e constantemente ameaçada pelo agronegócio. <br/>
+              <br/>
+              <strong>Convidada: Jhon Nara Gomes (liderança Guarani-kaiowá e realizadora) </strong><br/>
+              John Nara Gomes é uma das realizadoras do filme Ava Yvy Vera – a Terra do Povo do Raio. A obra foi vencedora do Festival Cine Kurumim 2017, realizado anualmente em Salvador. Como liderança, faz parte da Aty Jovem, conselho de jovens lideranças da Aty Guasu. <br/>
+              <br/>
+              <strong>Mediador convidado: Edgar Kanaykõ (Etnofotógrafo) </strong><br>
+
+              Edgar Kanaykõ Xakriabá, pertence ao povo indígena Xakriabá Estado de Minas Gerais. É mestre em Antropologia pela UFMG. Tem atuação livre na área de Etnofotografia: “um meio de registrar aspecto da cultura - a vida de um povo”. Nas lentes dele, a fotografia torna-se uma nova “ferramenta” de luta, possibilitando ao “outro” ver com outro olhar aquilo que um povo indígena é.<br/>
+
+
+            </p>
+          </div>  
+        </div>
+
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/OZmqGW95kAs"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">DEBATE \ Lançamento acervo — sab, 20 jun, 19h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">“Memórias de Izidora” e “Izidora: Dias de Luta, Noites de Resistência”
+              </h1>
+              <br/>
+              <h1 class="programacao__heading-film u-margin-buttom-medium">Sthefany de Paula (Realizadora e Militante do MLB)<br/>
+                Douglas Rezende (Realizador, Professor e Pesquisador)<br/>
+                Edinho Vieira(Coordenador Nacional do MLB)<br/>
+                
+                Mediação:
+                Aiano Bemfica (Equipe LONA)
+                
+              </h1>
+
+            <p class="programacao__text-resume"></p>
+          </div>  
+        </div>
+        
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/QZrA1LCGCt8"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">DEBATE \ Acervo — qui, 18 jun, 19h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">Chris Tigra  (Realizadora - MG)<br/>
+              Giselle  Bossi (Realizadora - MG)<br/>
+              Thiago Fernandes (Realizador, membro da APAN e do UNEAFRO BRASIL - SP)<br/>
+              Bruno Xavier (Diretor de Fotografia e sócio da Nigéria Filmes - CE)<br/>
+              Edinho Vieira (Realizador e Coordenador Nacional do MLB)
+              </h1>
+            <p class="programacao__text-resume"></p>
+          </div>  
+        </div>
+
+        <div class="iframe iframe--debates iframe--indisponivel">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/QxQ5aDyQ40k"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">DEBATE — Chão — ter, 16 jun, 19h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">Camila Freitas (Realizadora) <br/>
+              Bet Cerqueira (Militante do MST)<br/>
+              Poliana Souza (Coordenadora Nacional do MLB)<br/>
+              
+              Mediação:
+              Gabriel Araújo (Curador da LONA)
+              
+              </h1>
+            <p class="programacao__text-resume"></p>
+          </div>  
+        </div>
+
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/HHbO6AqTLmc"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">ENTREVISTA \ Homenagem — qui, 11 jun, 19h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">Tetê Moraes (Realizadora),<br/>
+              Cláudia Mesquita (Professora e Pesquisadora)<br/>             
+              Mediação:
+              Gabriel Araújo (Curador da LONA)</h1>
+            <p class="programacao__text-resume">Essa entrevista faz parte da LONA - Mostra Cinemas e Territórios. Conversaremos com a realizadora e a Tetê Moraes, uma das homenageadas desta edição,  e a professora e pesquisadora Cláudia Mesquita. A mediação será de Gabriel Araújo, um dos curadores da LONA.</p>
+          </div>  
+        </div>
+
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/dMMflLYbl8Y"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">Debate \ acervo — qua, 10 jun, 19h</h1>
+            <h1 class="programacao__heading-film u-margin-buttom-medium">Dênia Cruz  (Realizadora - RN), <br/>
+              Tiago Rodriges (Realizador - RS), <br/>
+              Anderson Lima  (Realizador e Educador - SP),<br/> 
+              Aiano Bemfica (Realizador e militante do MLB)
+              </h1>
+            <p class="programacao__text-resume">Essa roda de conversa faz parte da LONA - Mostra Cinemas e Territórios.  Falaremos sobre o processo de realização de  alguns dos  filmes da Programa Acervo,  que reúne obras filmadas junto ao Movimento de Luta nos Bairros, Vilas e Favelas em todo o Brasil. Contaremos com a presença da realizadora Dênia Cruz (RN) e dos realizadores Anderson Lima (SP), Tiago Rodrigues (RS) e Aiano Bemfica (MG).
+            </p>
+          </div>  
+        </div>
+
+        <div class="iframe iframe--debates">
+          <iframe
+            class="iframe__video iframe__video--debates"
+            src="https://www.youtube.com/embed/LEtaNPpIO7k"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+
+          <div class="iframe--debates-text">
+            <h1 class="programacao__heading-sessao-2">DEBATE \ "Cadê Edson?" — qua, 03 jun, 19h</h1>
+            <h1 class="programacao__heading-film">Edson Francisco da Silva, Dácia Ibiapina, Eslaine Paixão e Fábio Jota</h1>
+            <p class="programacao__text-resume">Esse debate faz parte da LONA - Mostra Cinemas e Territórios. No primeiro debate da LONA, falaremos sobre o filme “Cadê Edson?”, que faz parte da nossa Mostra Atravessamentos. Contaremos com a presença de Edson Francisco da Silva, militante do Movimento Resistência Popular e protagonista do documentário, da diretora Dácia Ibiapina e da Eslaine Paixão, militante do MLB e da Unidade Popular pelo Socialismo em Salvador (BA). A mediação vai ser de Fábio Jota, militante do MLB e parte da equipe da LONA!</p>
+          </div>  
+        </div>
+      </section>
+     <!--  <div id="sab"></div>
+
+      <section class="nav-prog">
+        <ul class="nav-prog__nav">
+          <li class="nav-prog__nav-item">
+            <a href="#sab" class="nav-prog__nav-link">Sab, 23 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#dog" class="nav-prog__nav-link">Dom, 24 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#seg" class="nav-prog__nav-link">Seg, 25 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#ter" class="nav-prog__nav-link">Ter, 26 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#qua" class="nav-prog__nav-link">Qua, 27 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#qui" class="nav-prog__nav-link">Qui, 28 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#sex" class="nav-prog__nav-link">Sex, 29 — MAI</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#sab2" class="nav-prog__nav-link">Sab, 30 — MAI</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="programacao">
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">Sab, 23 — mai, 17h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Abrimos a Mostra Atravessamentos com essa seleção de curtas da Mostra Acervo, marcando o lugar de importância ocupado pelas imagens produzidas na luta. As presentes imagens evidenciam o entrelaçamento de lutas relacionadas à pauta da moradia. São imagens que precisam ser vistas e histórias que precisam ser escutadas. Cinema, afinal, é também ferramenta de luta. 
+            </p>
+            <p class="programacao__text-resume">
+              Essa sessão é para se aproximar da história que o MLB constrói a partir dos olhares de diferentes momentos desses processos.
+              
+            </p>
+
+            <div class="programacao__btn">
+              <a href="/sessoes/abertura.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">Casa com Parede</h3>
+            <h5 class="programacao__text-tec">
+              Dênia Cruz <br />
+              16" — 2019
+            </h5>
+
+            <h3 class="programacao__heading-film">
+              Ocupar, Resistir e Construir
+            </h3>
+            <h5 class="programacao__text-tec">
+              Dayanne Naessa, Edinho Vieira, Juliano Vitral, Roberta Von Randow
+              <br />
+              14" — 2016
+            </h5>
+
+            <h3 class="programacao__heading-film">Na Missão, com Kadu</h3>
+            <h5 class="programacao__text-tec">
+              Aiano Bemfica, Kadu Freitas, Pedro Maia de Brito <br />
+              28" — 2016
+            </h5>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">Sab, 23 — mai, 20h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              O jornal baiano Correio publica, em 15 de maio de 2020, notícia com a manchete: “Quilombo Rio dos Macacos luta desde o Brasil imperial para sobreviver”. Indício breve de que a queda de braço entre direito ancestral e propriedade privada continua na região metropolitana de Salvador.              
+            </p>
+            <p class="programacao__text-resume">
+              “Quilombo Rio dos Macacos”, documentário de Josias Pires Neto, vai justamente contar a história de resistência dessa comunidade localizada entre as águas da cidade de Simões. Aos poucos, lançando mão de diferentes arquivos e abordagens, é construída a narrativa de uma denúncia; urgente tanto em 2009, quando o conflito se intensifica, quanto agora, dias de esvaziamento de instâncias representativas e de constantes ameaças.             
+            </p>
+            <p class="programacao__text-resume">
+              “Luta” e “resistência” são, afinal, palavras e conceitos recorrentes para as mais de 3000 comunidades quilombolas do país.            
+            </p>
+
+            <div class="programacao__btn">
+              <a id="dog" href="/sessoes/23-sabado.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">            
+            <h3 class="programacao__heading-film">Quilombo Rio dos Macacos</h3>
+            <h5 class="programacao__text-tec">
+              Josias Pires <br />
+              120" — 2017
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">dom, 24 — mai, 19h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Imagens que evidenciam situações de perigo. Imagens que surgem de
+              resistências concretas. Imagens com durações incertas, com
+              respirações muitas vezes trêmulas. Imagens que seguem de perto
+              pessoas e lutas, correndo ao lado delas, trabalhando ao lado
+              delas, arriscando ao lado delas o próprio corpo de quem filma.
+            </p>
+
+            <p class="programacao__text-resume">
+              Nas obras que compõem este programa, filmar é sobretudo um gesto
+              de combate e proteção, não apenas dos corpos diretamente expostos
+              nos territórios, mas também da ordenação de uma memória do
+              presente que o cinema mobiliza e depura.
+            </p>
+            <div class="programacao__btn">
+              <a id="seg" href="/sessoes/24-domingo.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">
+              Conte isso àqueles que dizem que fomos derrotados
+            </h3>
+            <h5 class="programacao__text-tec">
+              Aiano Mineiro, Camila Bastos, Cris Araujo, Pedro Maia de Brito
+              <br />
+              28" — 2018
+            </h5>
+            <h3 class="programacao__heading-film">
+              ZAWXIPERKWER KA’A – Guardiões da Floresta
+            </h3>
+            <h5 class="programacao__text-tec">
+              Jocy Guajajara, Milson Guajajara <br />
+              50" — 2019
+            </h5>
+            <h3 class="programacao__heading-film">Ameaçados</h3>
+            <h5 class="programacao__text-tec">
+              Júlia Mariano <br />
+              22" — 2014
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">seg, 25 — mai, 19h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Sessão de festa. Pegando emprestado o nome dado aos grandes movimentos de novas ocupações simultâneas na cidade de São Paulo, os filmes reunidos aqui não trazem imagens típicas de festas, mas, sim, a urgência, a rebeldia e a intensidade das lutas para conquistar suas moradias. 
+            </p>
+
+            <p class="programacao__text-resume">
+              O conflito aberto entre as forças da opressão e as forças das resistências surgem desde o primeiro filme até o último minuto. A sessão passa por momentos explosivos das pessoas que ocupam as telas, os prédios abandonados e os lotes vagos, se organizando em ações sem medo dos enfrentamentos necessários para ocupar e vencer.
+            </p>
+            <div class="programacao__btn">
+              <a id="ter" href="/sessoes/25-segunda.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">
+              Derrubada
+            </h3>
+            <h5 class="programacao__text-tec">
+              Mirrah Iañez <br />
+              4" — 2016
+            </h5>
+            <h3 class="programacao__heading-film">
+              Estamos todos aqui
+            </h3>
+            <h5 class="programacao__text-tec">
+              Rafael Mellin e Chico Santos <br />
+              20" — 2018
+            </h5>
+            <h3 class="programacao__heading-film">Dia de Festa</h3>
+            <h5 class="programacao__text-tec">
+              Pablo Georgieff e Toni Venturi <br />
+              77" — 2006
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">ter, 26 — mai, 19h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Terra não só como moradia, mas também como lugar de construção de identidade, de conhecimento e reconhecimento com o passado. Terra como portadora de memória. Terra como lugar de cura.
+            </p>
+            <p class="programacao__text-resume">
+              “Do corpo da terra” traz histórias de mulheres com vivências conectadas às formas de curas que a terra fornece. Terra que é também base de “Furna dos Negros” e “Nove Águas”, filmes que evidenciam a luta quilombola. A importância da terra passada por gerações, conquistada e mantida com resiliência, se equilibra na beleza das imagens e nas subjetividades das relações estabelecidas com esses espaços e com essas histórias imbricadas no solo.
+            </p>
+            <p class="programacao__text-resume">
+              Esta sessão se atravessa pelo pertencimento dessas ligações de sujeitos que constroem na terra e na terra que constrói sujeitos. 
+            </p>
+            <div class="programacao__btn">
+              <a id="qua" href="/sessoes/26-terca.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">Furna dos Negros</h3>
+            <h5 class="programacao__text-tec">
+              Wladymir Lima <br />29" — 2017
+            </h5>
+            <h3 class="programacao__heading-film">Do corpo da terra</h3>
+            <h5 class="programacao__text-tec">
+              Julia Mariano <br />
+              24" — 2016
+            </h5>
+            <h3 class="programacao__heading-film">Nove Águas</h3>
+            <h5 class="programacao__text-tec">
+              Gabriel Martins e Quilombo dos Marques <br />
+              25" — 2019
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">qua, 27 — mai, 19h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Até que ponto corremos o risco de perder direitos já conquistados?
+              Ou quando uma luta pode se dar por vencida? A quinta sessão da
+              Mostra LONA parte desse questionamento para tentar buscar
+              possíveis respostas em diferentes temporalidades: seja a partir
+              das experiências passadas de um país em construção, de exemplos de
+              um controverso presente ou de projeções para e sobre um futuro de
+              autoritarismo e vigilância.
+            </p>
+
+            <p class="programacao__text-resume">
+              Por isso, por um lado, traça alguns paralelos entre épocas
+              distintas a fim de encontrar, no rap e no samba, a rima da luta de
+              quem resiste e, por outro, visita o litoral e o aglomerado para
+              buscar apoio entre uma juventude que, mesmo ameaçada, ergue-se e
+              diz a que veio. Esta é, sobretudo, uma sessão de esperança.
+            </p>
+            <div class="programacao__btn">
+              <a id="qui" href="/sessoes/27-quarta.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">Brooklin</h3>
+            <h5 class="programacao__text-tec">
+              Coletivo CineLeblon <br />
+              22" — 2019
+            </h5>
+
+            <h3 class="programacao__heading-film">
+              Associação de Moradores do Guararape
+            </h3>
+            <h5 class="programacao__text-tec">
+              Sergio Péo <br />
+              14" — 1979
+            </h5>
+
+            <h3 class="programacao__heading-film">Território Ocupado</h3>
+            <h5 class="programacao__text-tec">
+              Coletivo Cinema e Sal <br />
+              15" — 2018
+            </h5>
+
+            <h3 class="programacao__heading-film">Rap, o canto da Ceilândia</h3>
+            <h5 class="programacao__text-tec">
+              Adirley Queiroz <br />
+              15" — 2005
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">qui, 28 — mai, 19h — 23:59h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              Um retrato intimista do Movimento dos Trabalhadores Rurais sem Terra (MST) que concilia, com primor, a carga coletiva da luta política e as particularidades e singelezas da vida de cada ocupante. Pessoas com os pés firmados no chão e a mente cheia de sonhos e planos.
+            </p>
+            <p class="programacao__text-resume">
+              Previsto para chegar nos cinemas no dia 26 de março, a estreia de “Chão” precisou ser adiada devido ao avanço da pandemia de Covid-19 no país. O filme estará disponível entre 19h e 23:59h da quinta-feira (28).
+            </p>
+
+            <div class="programacao__btn">
+              <a id="sab2" href="/sessoes/28-quinta.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">
+              Chão
+            </h3>
+            <h5 class="programacao__text-tec">
+              Camila Freitas <br />
+              112" — 2019
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+<div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">sex, 29 — mai, 19h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+              “Minha provocação para adiar o fim do mundo é sempre poder contar
+              mais uma história”. Essas palavras proferidas por Ailton Krenak,
+              em seu livro Ideias para adiar o fim do mundo, ajudam a conectar
+              esses três gestos de cinema distintos. A tessitura da história,
+              seja ela relato de urgência, elaboração do presente ou
+              ressignificação cosmológica do tempo, fortalece o enfrentamento
+              das situações vividas cotidianamente e ajuda o(s) mundo(s) a
+              continuar(em).
+            </p>
+            <div class="programacao__btn">
+              <a id="sex" href="/sessoes/29-sexta.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">
+              Yvy Renõi, Semente da Terra
+            </h3>
+            <h5 class="programacao__text-tec">
+              Coletivo ASCURI <br />
+              15" — 2017
+            </h5>
+            <h3 class="programacao__heading-film">
+              Pra se contar uma história
+            </h3>
+            <h5 class="programacao__text-tec">
+              Elen Linth, Lucicleide Santos, Diego Jesus e Leandro Rodrigues
+              <br />
+              25" — 2013
+            </h5>
+            <h3 class="programacao__heading-film">Ava Yvy Vera</h3>
+            <h5 class="programacao__text-tec">
+              Genito Gomes, Valmir Gonçalves Cabreira, Jhonn Nara Gomes,
+              Jhonatan Gomes, Edina Ximenez, Dulcídio Gomes, Sarah Brites,
+              Joilson Brites <br />
+              54" — 2016
+            </h5>
+          </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="programacao__divider programacao__divider--2">&nbsp;</div>
+        </div>
+
+        <div class="row programacao__heading u-margin-buttom-medium">
+          <div class="programacao__bar-box">
+            <span class="programacao__bar">&nbsp;</span>
+          </div>
+          <h1 class="programacao__heading-sessao">sab, 30 — mai, 19h — 23:59h</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="programacao__text-resume">
+Em certa cena de “Cadê Edson?”, filme-bomba de Dácia Ibiapina, um policial aponta uma lanterna para a câmera de celular que deseja denunciar a arbitrariedade. O gesto, autoritário por si só, revela ainda a vontade pelo controle da narrativa, cada vez mais corrente numa sociedade que tenta, com a ajuda dos mais altos escalões do país, revisionar uma história.  
+            </p>
+            <p class="programacao__text-resume">
+              Por meio da ação de um militante, o longa não dá apenas uma resposta a altura. Ele elabora uma convocação.            
+            </p>
+            <p class="programacao__text-resume">
+              Esta é a segunda exibição do documentário que estreou, sob aplausos, na Mostra Aurora da 23ª Mostra de Cinema de Tiradentes. O filme estará disponível entre as 19h e 23:59h do sábado, 30 de maio.          
+            </p>
+
+            <div class="programacao__btn">
+              <a href="/sessoes/30-sabado.html" class="btn">Assista a sessão</a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <h3 class="programacao__heading-film">Cadê Edson?</h3>
+            <h5 class="programacao__text-tec">
+              Dácia Ibiapina <br />
+              72" — 2019
+            </h5>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__text-box">
+        <p class="footer__text"> Realização </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--1">
+        <img src="img/mlb-logo-wht.png" alt="Logo MLB" class="footer__logo">
+      </div>
+      <div class="footer__text-box">
+        <p class="footer__text"> Apoio </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--2"> 
+        <img src="img/embauba-logo-wht.png" alt="Logo Embauba" class="footer__logo">
+      </div>
+      <div class="footer__email-box">
+        <p class="footer__email">contato@mostra-lona.com.br</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid $color-red-1;
+        transition: all .2s;
+        font-size: 1.6rem;
+        color: $color-red-1;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
+    }
+
+    &:hover {
+        background-color: $color-red-1;
+        color: $color-white;
+    }
+
+    &--branco {
+        color: $color-white !important;
+        background-color: $color-red-1;
+        border: 1px solid $color-white !important;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-red-1 !important;
+        }
+    }
+
+    &--mostras {
+        border: none !important;
+        padding: 0 !important;
+        transition: all .2s;
+
+        span {
+            margin-left: 0;
+            transition: margin-left .2s;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $color-red-1;
+
+            span {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+}
+
+.btn-leia-mais {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .2s;
+        font-size: 1.6rem;
+        color: $color-red-1;
+        border-radius: 5px;
+        padding: 0 3px;
+        margin-left: -3px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}

@@ -1,0 +1,13 @@
+.lancamentos {
+
+    padding: 3rem;
+
+    &__heading-home {
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 5.2rem;
+        line-height: 1;
+        font-weight: 600;
+        color: $color-red-1;
+        margin-bottom: 5rem;
+    }
+}

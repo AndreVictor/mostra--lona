@@ -1,0 +1,161 @@
+.card-texto {
+
+/*     margin-top: 8rem;
+    margin-bottom: 3rem; */
+
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid $color-gray-2;
+    border-radius: 5px;
+    height: 36rem;
+
+    @include respond(tab-port) { 
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;;
+    }
+
+    &--vertical {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__img {
+
+        &--1 {
+            background-image: url(../img/nmck-2.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/textos/enquadrando-o-enquadrador.png);
+        }
+
+        &--3 {
+            background-image: url(../img/textos/estamos-todos-aqui.jpg);
+        }
+
+        &--4 {
+            background-image: url(../img/textos/levante.jpg);
+        }
+
+        &--5 {
+            background-image: url(../img/sessoes-cards/card-8.jpg);
+        }
+
+        &--6 {
+            background-image: url(../img/textos/1_l6V44spjJiCNclN8r-upog.gif);
+        }
+
+        &--7 {
+            background-image: url(../img/textos/Na-missão-com-Kadu.jpg);
+        }
+
+        &--8 {
+            background-image: url(http://revistacinetica.com.br/nova/wp-content/uploads/2017/06/missaomapa.jpg);
+        }
+
+        &--9 {
+            background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_07_21_09.Quadro002.jpg);
+        }
+
+        &--10 {
+            background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_25_07_09.Quadro015.jpg);
+        }
+
+        &--11 {
+            background-image: url(http://revistacinetica.com.br/nova/wp-content/uploads/2019/01/empate-header.jpg);
+        }
+
+        &--12 {
+            background-image: url(https://averdade.org.br/novo/wp-content/uploads/2020/05/Foto-166-DOCUMENT%C3%81RIO-MLB.jpg);
+        }
+
+        &--13 {
+            background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_12_50_09.Quadro008.jpg);
+        }
+
+
+
+        &,
+        &:link,
+        &:visited {
+        background-size: cover;
+        background-position: center;
+        flex: 1 1 0;
+        height: 100%;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+
+        @include respond(tab-port) { 
+            flex: 1 1 20rem;
+            width: 100%;
+        }
+        }
+
+        &:hover,
+        &:focus {
+            filter: brightness(150%);
+        }
+
+        &--vertical {
+            display: block;
+            padding-top: 24rem;
+            width: 100%;
+            height: 34rem;
+        }
+
+    }
+
+    &__container {
+        flex: 2 2 0;
+        padding: 3rem;
+
+        @include respond(tab-port) { 
+            flex: 1 0 0;
+        }
+
+    }
+
+    &__heading {
+        color: $color-black;
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 3.2rem;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 1.6rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-red-1;
+        }
+
+
+    }
+
+    &__author {
+        color: $color-black;
+        font-family: "Saira Condensed", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+
+    }
+
+    &__resume {
+        font-family: "Saira", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-dark-1;
+        margin-bottom: 1.6rem;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
+
+    }
+
+}

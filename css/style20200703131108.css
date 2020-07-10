@@ -1,0 +1,2284 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+::selection {
+  background-color: #ed6c77; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /*     @include respond(phone) {
+        font-size: 30%;   
+    } */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  color: #3c3c3b;
+  background-color: #EFEFEF; }
+
+.lancamentos {
+  padding: 3rem; }
+  .lancamentos__heading-home {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 5.2rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #BC0303;
+    margin-bottom: 5rem; }
+
+.u-margin-buttom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-buttom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-buttom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem !important; }
+
+.u-align-text {
+  text-align: center !important; }
+
+.u-align-text-left {
+  text-align: left; }
+
+@media (max-width: 37.5em) {
+  .padding-mobile {
+    padding: 0 3rem !important; } }
+
+.banner__text {
+  margin-bottom: 3rem; }
+
+.banner__text-sessao {
+  color: #BC0303;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .banner__text-sessao {
+      color: #fff; } }
+
+.banner__text-film {
+  color: #EFEFEF;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -.2px;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1; }
+
+.banner__text-director {
+  color: #EFEFEF;
+  font-family: "Saira Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1; }
+  .banner__text-director:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.banner-rede {
+  background-color: #BC0303;
+  padding: 5rem; }
+  .banner-rede__logo {
+    width: 75%;
+    float: right; }
+    @media (max-width: 56.25em) {
+      .banner-rede__logo {
+        width: 50%;
+        float: none;
+        margin-left: 25%;
+        margin-bottom: -4rem; } }
+  .banner-rede__heading {
+    color: #fff;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem; }
+  .banner-rede__text {
+    color: #fff;
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem; }
+    @media (max-width: 56.25em) {
+      .banner-rede__text {
+        font-size: 2rem; } }
+    .banner-rede__text, .banner-rede__text:link, .banner-rede__text:visited {
+      color: #fff; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden; }
+  @media (max-width: 56.25em) {
+    .bg-video {
+      top: 17rem; } }
+  @media (max-width: 56.25em) {
+    .bg-video--mostras {
+      top: 0rem; } }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+    .bg-video__content--mostras {
+      border-radius: 5px; }
+      @media (max-width: 56.25em) {
+        .bg-video__content--mostras {
+          border-radius: 0px; } }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #BC0303;
+  transition: all .2s;
+  font-size: 1.6rem;
+  color: #BC0303; }
+  @media (max-width: 56.25em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 2rem; } }
+
+.btn:hover {
+  background-color: #BC0303;
+  color: #fff; }
+
+.btn--branco {
+  color: #fff !important;
+  background-color: #BC0303;
+  border: 1px solid #fff !important; }
+  .btn--branco:hover {
+    background-color: #fff;
+    color: #BC0303 !important; }
+
+.btn--mostras {
+  border: none !important;
+  padding: 0 !important;
+  transition: all .2s; }
+  .btn--mostras span {
+    margin-left: 0;
+    transition: margin-left .2s; }
+  .btn--mostras:hover {
+    background-color: transparent;
+    color: #BC0303; }
+    .btn--mostras:hover span {
+      margin-left: 2rem; }
+
+.btn-leia-mais, .btn-leia-mais:link, .btn-leia-mais:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .2s;
+  font-size: 1.6rem;
+  color: #BC0303;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin-left: -3px; }
+
+.btn-leia-mais:hover {
+  text-decoration: underline; }
+
+.card__content, .card__content:link, .card__content:visited {
+  text-decoration: none;
+  height: 48rem;
+  padding: 3rem;
+  transform: scale(1);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  backface-visibility: hidden; }
+
+.card__content--text {
+  height: 100% !important; }
+
+.card__content--1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-1.png); }
+  @media (max-width: 56.25em) {
+    .card__content--1::after {
+      filter: brightness(50%); } }
+
+.card__content--1:hover::after {
+  filter: brightness(30%); }
+
+.card__content--1-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-1-2.png); }
+  @media (max-width: 56.25em) {
+    .card__content--1-2::after {
+      filter: brightness(50%); } }
+
+.card__content--1-2:hover::after {
+  filter: brightness(30%); }
+
+.card__content--2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-2.png); }
+  @media (max-width: 56.25em) {
+    .card__content--2::after {
+      filter: brightness(50%); } }
+
+.card__content--2:hover::after {
+  filter: brightness(30%); }
+
+.card__content--3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-3.png); }
+  @media (max-width: 56.25em) {
+    .card__content--3::after {
+      filter: brightness(50%); } }
+
+.card__content--3:hover::after {
+  filter: brightness(30%); }
+
+.card__content--4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-4.png); }
+  @media (max-width: 56.25em) {
+    .card__content--4::after {
+      filter: brightness(50%); } }
+
+.card__content--4:hover::after {
+  filter: brightness(30%); }
+
+.card__content--5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-5.png); }
+  @media (max-width: 56.25em) {
+    .card__content--5::after {
+      filter: brightness(50%); } }
+
+.card__content--5:hover::after {
+  filter: brightness(30%); }
+
+.card__content--6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-6.png); }
+  @media (max-width: 56.25em) {
+    .card__content--6::after {
+      filter: brightness(50%); } }
+
+.card__content--6:hover::after {
+  filter: brightness(30%); }
+
+.card__content--7::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-7.png); }
+  @media (max-width: 56.25em) {
+    .card__content--7::after {
+      filter: brightness(50%); } }
+
+.card__content--7:hover::after {
+  filter: brightness(30%); }
+
+.card__content--8::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-8.jpg); }
+  @media (max-width: 56.25em) {
+    .card__content--8::after {
+      filter: brightness(50%); } }
+
+.card__content--8:hover::after {
+  filter: brightness(30%); }
+
+.card__content--9::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/sessoes-cards/card-9.jpg); }
+  @media (max-width: 56.25em) {
+    .card__content--9::after {
+      filter: brightness(50%); } }
+
+.card__content--9:hover::after {
+  filter: brightness(30%); }
+
+.card__content--1-rua-publica::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/1-rua-publica.png); }
+  @media (max-width: 56.25em) {
+    .card__content--1-rua-publica::after {
+      filter: brightness(50%); } }
+
+.card__content--1-rua-publica:hover::after {
+  filter: brightness(30%); }
+
+.card__content--2-ultima-noite::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/2-ultima-noite.png); }
+  @media (max-width: 56.25em) {
+    .card__content--2-ultima-noite::after {
+      filter: brightness(50%); } }
+
+.card__content--2-ultima-noite:hover::after {
+  filter: brightness(30%); }
+
+.card__content--3-aniversario-e-castigo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/3-aniversario-e-castigo.png); }
+  @media (max-width: 56.25em) {
+    .card__content--3-aniversario-e-castigo::after {
+      filter: brightness(50%); } }
+
+.card__content--3-aniversario-e-castigo:hover::after {
+  filter: brightness(30%); }
+
+.card__content--4-carolinas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/3-carolinas.png); }
+  @media (max-width: 56.25em) {
+    .card__content--4-carolinas::after {
+      filter: brightness(50%); } }
+
+.card__content--4-carolinas:hover::after {
+  filter: brightness(30%); }
+
+.card__content--5-casa-com-parede::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/5-casa-com-parede.png); }
+  @media (max-width: 56.25em) {
+    .card__content--5-casa-com-parede::after {
+      filter: brightness(50%); } }
+
+.card__content--5-casa-com-parede:hover::after {
+  filter: brightness(30%); }
+
+.card__content--6-casa-na-marra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/6-casa-na-marra.png); }
+  @media (max-width: 56.25em) {
+    .card__content--6-casa-na-marra::after {
+      filter: brightness(50%); } }
+
+.card__content--6-casa-na-marra:hover::after {
+  filter: brightness(30%); }
+
+.card__content--7-conte-isso::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/7-conte-isso.png); }
+  @media (max-width: 56.25em) {
+    .card__content--7-conte-isso::after {
+      filter: brightness(50%); } }
+
+.card__content--7-conte-isso:hover::after {
+  filter: brightness(30%); }
+
+.card__content--8-izidora::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/8-izidora.png); }
+  @media (max-width: 56.25em) {
+    .card__content--8-izidora::after {
+      filter: brightness(50%); } }
+
+.card__content--8-izidora:hover::after {
+  filter: brightness(30%); }
+
+.card__content--9-lanceiros::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/9-lanceiros.png); }
+  @media (max-width: 56.25em) {
+    .card__content--9-lanceiros::after {
+      filter: brightness(50%); } }
+
+.card__content--9-lanceiros:hover::after {
+  filter: brightness(30%); }
+
+.card__content--10-lenigrado::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/10-lenigrado.png); }
+  @media (max-width: 56.25em) {
+    .card__content--10-lenigrado::after {
+      filter: brightness(50%); } }
+
+.card__content--10-lenigrado:hover::after {
+  filter: brightness(30%); }
+
+.card__content--11-menino-mitou::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/11-menino-mitou.png); }
+  @media (max-width: 56.25em) {
+    .card__content--11-menino-mitou::after {
+      filter: brightness(50%); } }
+
+.card__content--11-menino-mitou:hover::after {
+  filter: brightness(30%); }
+
+.card__content--12-na-missao::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/12-na-missao.png); }
+  @media (max-width: 56.25em) {
+    .card__content--12-na-missao::after {
+      filter: brightness(50%); } }
+
+.card__content--12-na-missao:hover::after {
+  filter: brightness(30%); }
+
+.card__content--13-ocupar-resistir::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/13-ocupar-resistir.png); }
+  @media (max-width: 56.25em) {
+    .card__content--13-ocupar-resistir::after {
+      filter: brightness(50%); } }
+
+.card__content--13-ocupar-resistir:hover::after {
+  filter: brightness(30%); }
+
+.card__content--14-palmilha::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/14-palmilha.png); }
+  @media (max-width: 56.25em) {
+    .card__content--14-palmilha::after {
+      filter: brightness(50%); } }
+
+.card__content--14-palmilha:hover::after {
+  filter: brightness(30%); }
+
+.card__content--15-quem-luta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/15-quem-luta.png); }
+  @media (max-width: 56.25em) {
+    .card__content--15-quem-luta::after {
+      filter: brightness(50%); } }
+
+.card__content--15-quem-luta:hover::after {
+  filter: brightness(30%); }
+
+.card__content--16-voce-faria::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/16-voce-faria.png); }
+  @media (max-width: 56.25em) {
+    .card__content--16-voce-faria::after {
+      filter: brightness(50%); } }
+
+.card__content--16-voce-faria:hover::after {
+  filter: brightness(30%); }
+
+.card__content--17-zaga-de-bonecas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/17-zaga-de-bonecas.png); }
+  @media (max-width: 56.25em) {
+    .card__content--17-zaga-de-bonecas::after {
+      filter: brightness(50%); } }
+
+.card__content--17-zaga-de-bonecas:hover::after {
+  filter: brightness(30%); }
+
+.card__content--18-izidora-dias-de-luta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/18-izidora-dias-de-luta.png); }
+  @media (max-width: 56.25em) {
+    .card__content--18-izidora-dias-de-luta::after {
+      filter: brightness(50%); } }
+
+.card__content--18-izidora-dias-de-luta:hover::after {
+  filter: brightness(30%); }
+
+.card__content--19-memorias-de-izidora::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/19-memorias-de-izidora.png); }
+  @media (max-width: 56.25em) {
+    .card__content--19-memorias-de-izidora::after {
+      filter: brightness(50%); } }
+
+.card__content--19-memorias-de-izidora:hover::after {
+  filter: brightness(30%); }
+
+.card__content--1-fruto-da-terra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/1-fruto-da-terra.png); }
+  @media (max-width: 56.25em) {
+    .card__content--1-fruto-da-terra::after {
+      filter: brightness(50%); } }
+
+.card__content--1-fruto-da-terra:hover::after {
+  filter: brightness(30%); }
+
+.card__content--2-pinheirinho::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/2-pinheirinho.png); }
+  @media (max-width: 56.25em) {
+    .card__content--2-pinheirinho::after {
+      filter: brightness(50%); } }
+
+.card__content--2-pinheirinho:hover::after {
+  filter: brightness(30%); }
+
+.card__content--3-terra-para-rose::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  background-image: url(../img/acervo-cards/3-terra-para-rose.png); }
+  @media (max-width: 56.25em) {
+    .card__content--3-terra-para-rose::after {
+      filter: brightness(50%); } }
+
+.card__content--3-terra-para-rose:hover::after {
+  filter: brightness(30%); }
+
+.card__content--bg::after {
+  filter: brightness(60%) grayscale(1); }
+
+.card__content > * {
+  z-index: 1000; }
+
+.card__content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
+  @media (max-width: 56.25em) {
+    .card__content:hover {
+      transform: scale(1);
+      box-shadow: none; } }
+
+.card__content:active, .card__content:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+  @media (max-width: 56.25em) {
+    .card__content:active, .card__content:focus {
+      transform: scale(1);
+      box-shadow: none; } }
+
+.card__heading-sessao {
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  color: #fff;
+  transition: all 0.2s; }
+  .card__heading-sessao--barra {
+    display: inline-block;
+    color: #BC0303;
+    font-weight: 900;
+    margin-right: 0.8rem; }
+
+.card__heading-film {
+  color: #fff;
+  font-family: "Saira Condensed", sans-serif;
+  letter-spacing: 0.32px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1; }
+  @media (max-width: 56.25em) {
+    .card__heading-film {
+      font-size: 3rem;
+      line-height: 1; } }
+  .card__heading-film--acervo {
+    transition: all 0.2s;
+    font-size: 3.2rem; }
+  .card__heading-film--text {
+    color: #000;
+    margin-bottom: 1.6rem !important; }
+  .card__heading-film--text-resumo {
+    color: #000;
+    font-family: "Saira", sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem; }
+  .card__heading-film:not(:last-child) {
+    margin-bottom: 0rem; }
+
+.card__text-tec {
+  color: #fff;
+  font-family: "Saira Condensed", sans-serif;
+  letter-spacing: 0.32px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  height: 0;
+  line-height: 1.2;
+  opacity: 0; }
+  .card__text-tec--nohide {
+    height: 100%;
+    opacity: 1; }
+  @media (max-width: 56.25em) {
+    .card__text-tec {
+      height: 100%;
+      opacity: 1; } }
+  .card__text-tec--sinopse {
+    transition: all 0.5s ease;
+    font-weight: 300; }
+  .card__text-tec:not(:last-child) {
+    margin-bottom: 1.6rem; }
+
+.card:hover .card__text-tec {
+  opacity: 1;
+  height: 100%; }
+
+.card:hover .card__heading-sessao {
+  color: #BC0303; }
+
+.card:hover .card__heading-film--acervo {
+  color: #BC0303; }
+
+.card-texto {
+  /*     margin-top: 8rem;
+    margin-bottom: 3rem; */
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  height: 36rem; }
+  @media (max-width: 56.25em) {
+    .card-texto {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      flex-direction: column; } }
+  .card-texto--vertical {
+    flex-direction: column;
+    height: 100%; }
+  .card-texto__img--1 {
+    background-image: url(../img/nmck-2.jpg); }
+  .card-texto__img--2 {
+    background-image: url(../img/textos/enquadrando-o-enquadrador.png); }
+  .card-texto__img--3 {
+    background-image: url(../img/textos/estamos-todos-aqui.jpg); }
+  .card-texto__img--4 {
+    background-image: url(../img/textos/levante.jpg); }
+  .card-texto__img--5 {
+    background-image: url(../img/sessoes-cards/card-8.jpg); }
+  .card-texto__img--6 {
+    background-image: url(../img/textos/1_l6V44spjJiCNclN8r-upog.gif); }
+  .card-texto__img--7 {
+    background-image: url(../img/textos/Na-missão-com-Kadu.jpg); }
+  .card-texto__img--8 {
+    background-image: url(http://revistacinetica.com.br/nova/wp-content/uploads/2017/06/missaomapa.jpg); }
+  .card-texto__img--9 {
+    background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_07_21_09.Quadro002.jpg); }
+  .card-texto__img--10 {
+    background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_25_07_09.Quadro015.jpg); }
+  .card-texto__img--11 {
+    background-image: url(http://revistacinetica.com.br/nova/wp-content/uploads/2019/01/empate-header.jpg); }
+  .card-texto__img--12 {
+    background-image: url(https://averdade.org.br/novo/wp-content/uploads/2020/05/Foto-166-DOCUMENT%C3%81RIO-MLB.jpg); }
+  .card-texto__img--13 {
+    background-image: url(https://pedromaiadebrito.com/wp-content/uploads/2019/11/Na-Missa%CC%83o-com-Kadu-__-On-the-Mission-with-Kadu.00_12_50_09.Quadro008.jpg); }
+  .card-texto__img, .card-texto__img:link, .card-texto__img:visited {
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 0;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1); }
+    @media (max-width: 56.25em) {
+      .card-texto__img, .card-texto__img:link, .card-texto__img:visited {
+        flex: 1 1 20rem;
+        width: 100%; } }
+  .card-texto__img:hover, .card-texto__img:focus {
+    filter: brightness(150%); }
+  .card-texto__img--vertical {
+    display: block;
+    padding-top: 24rem;
+    width: 100%;
+    height: 34rem; }
+  .card-texto__container {
+    flex: 2 2 0;
+    padding: 3rem; }
+    @media (max-width: 56.25em) {
+      .card-texto__container {
+        flex: 1 0 0; } }
+  .card-texto__heading {
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1.6rem;
+    text-decoration: none; }
+    .card-texto__heading:hover {
+      color: #BC0303; }
+  .card-texto__author {
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem; }
+  .card-texto__resume {
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #3c3c3b;
+    margin-bottom: 1.6rem; }
+    @media (max-width: 56.25em) {
+      .card-texto__resume {
+        font-size: 2rem; } }
+
+.iframe {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden; }
+  .iframe__indisponivel {
+    background-color: #000;
+    height: 32rem; }
+    .iframe__indisponivel--text {
+      color: #fff;
+      font-size: 3.2rem;
+      margin-top: 16rem;
+      text-align: center; }
+  .iframe--debates {
+    background-color: transparent;
+    padding: 9rem 9rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #707070; }
+    @media (max-width: 56.25em) {
+      .iframe--debates {
+        flex-direction: column;
+        padding: 9rem 0; } }
+  .iframe--debates-text {
+    padding: 3rem;
+    flex: 1; }
+  .iframe__video {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+    .iframe__video--campanha {
+      height: 62rem; }
+    .iframe__video--sessao {
+      height: 64rem; }
+    .iframe__video--debates {
+      width: 100%;
+      height: 42rem;
+      flex: 2; }
+    .iframe__video--encerramento {
+      align-self: flex-start; }
+
+@media (min-width: 75em) {
+  .navigation-mobile {
+    display: none; } }
+
+.navigation-mobile__checkbox {
+  display: none; }
+
+.navigation-mobile__button {
+  background-color: #BC0303;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation-mobile__background {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  background-image: radial-gradient(#BC0303, #ed6c77);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation-mobile__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: -30rem;
+  z-index: 1500;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation-mobile__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation-mobile__item {
+  margin: 1rem; }
+
+.navigation-mobile__link:link, .navigation-mobile__link:visited {
+  font-family: "Saira Condensed", sans-serif;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 250%;
+  transition: all .4s; }
+  .navigation-mobile__link:link span, .navigation-mobile__link:visited span {
+    margin-right: 1.6rem;
+    display: inline-block; }
+
+.navigation-mobile__checkbox:checked ~ .navigation-mobile__background {
+  transform: scale(100); }
+
+.navigation-mobile__checkbox:checked ~ .navigation-mobile__nav {
+  opacity: 1;
+  width: 100%;
+  left: 0; }
+
+.navigation-mobile__icon {
+  position: relative;
+  margin-top: 3rem; }
+  .navigation-mobile__icon, .navigation-mobile__icon::before, .navigation-mobile__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block; }
+  .navigation-mobile__icon::before, .navigation-mobile__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation-mobile__icon::before {
+    top: -.8rem; }
+  .navigation-mobile__icon::after {
+    top: .8rem; }
+
+.navigation-mobile__button:hover .navigation-mobile__icon::before {
+  top: -1rem; }
+
+.navigation-mobile__button:hover .navigation-mobile__icon::after {
+  top: 1rem; }
+
+.navigation-mobile__checkbox:checked + .navigation-mobile__button .navigation-mobile__icon {
+  background-color: transparent; }
+
+.navigation-mobile__checkbox:checked + .navigation-mobile__button .navigation-mobile__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation-mobile__checkbox:checked + .navigation-mobile__button .navigation-mobile__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+.navigation-mobile__dropdown {
+  cursor: pointer;
+  position: relative;
+  font-family: "Saira Condensed", sans-serif;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 250%;
+  transition: all .4s; }
+
+.navigation-mobile__dropdown-checkbox {
+  display: none; }
+
+.navigation-mobile__dropdown-nav {
+  height: 0rem;
+  opacity: 0;
+  z-index: -15000;
+  font-size: 0;
+  transition: all .4s; }
+
+.navigation-mobile__dropdown-checkbox:checked ~ .navigation-mobile__dropdown-nav {
+  opacity: 1;
+  height: 12vh;
+  z-index: 1500; }
+
+.navigation-mobile__dropdown-checkbox:checked ~ .navigation-mobile__dropdown {
+  color: #000; }
+
+.navigation-mobile__dropdown-item {
+  display: block;
+  text-align: center;
+  margin: 2rem; }
+
+.navigation-mobile__dropdown-link {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem; }
+
+.navigation-mobile__dropdown-icon {
+  color: #fff; }
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+/**
+ * Padding is set relative to the width
+ * of the element, so here padding-top:60% is
+ * a percentage of the width. This allows us 
+ * to set the height as a ratio of the width
+ *
+ */
+.carousel {
+  width: 100%;
+  height: 48rem;
+  position: relative;
+  overflow: hidden; }
+
+.inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/**
+ * ==========================
+ * Animation styles
+ * 
+ * Notes:
+ * 1. We use z-index to position active slides in-front 
+ * of non-active slides
+ * 2. We set right:0 and left:0 on .slide to provide us with
+ * a default positioning on both sides of the slide. This allows 
+ * us to trigger JS and CSS3 animations easily
+ *
+ */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0; }
+
+.slide.active,
+.slide.left,
+.slide.right {
+  z-index: 2;
+  opacity: 1; }
+
+/**
+ * ==========================
+ * JS animation styles
+ * 
+ * We use jQuery.animate to control the sliding animations
+ * when CSS3 animations are not available. In order for
+ * the next slide to slide in from the right, we need
+ * to change the left:0 property of the slide to left:auto
+ *
+ */
+.js-reset-left {
+  left: auto; }
+
+/**
+ * ==========================
+ * CSS animation styles
+ * 
+ * .slide.left and .slide.right set-up
+ * the to-be-animated slide so that it can slide
+ * into view. For example, a slide that is about 
+ * to slide in from the right will:
+ * 1. Be positioned to the right of the viewport (right:-100%)
+ * 2. Slide in when the style is superseded with a more specific style (right:0%)
+ *
+ */
+.slide.left {
+  left: -100%;
+  right: 0; }
+
+.slide.right {
+  right: -100%;
+  left: auto; }
+
+.transition .slide.left {
+  left: 0%; }
+
+.transition .slide.right {
+  right: 0%; }
+
+/**
+ * The following classes slide the previously active
+ * slide out of view before positioning behind the 
+ * currently active slide
+ *
+ */
+.transition .slide.shift-right {
+  right: 100%;
+  left: auto; }
+
+.transition .slide.shift-left {
+  left: 100%;
+  right: auto; }
+
+/**
+ * This sets the CSS properties that will animate. We set the
+ * transition-duration property dynamically via JS.
+ * We use the browser's default transition-timing-function
+ * for simplicity's sake
+ * 
+ * It is important to note that we are using CodePen's inbuilt
+ * CSS3 property prefixer. For your own projects, you will need
+ * to prefix the transition and transform properties here to ensure
+ * reliable support across browsers
+ *
+ */
+.transition .slide {
+  transition-property: right, left, margin; }
+
+/**
+ * ==========================
+ * Indicators
+ *
+ */
+.indicators {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  padding: 0;
+  text-align: center; }
+
+.indicators li {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  margin: 1rem;
+  background: transparent;
+  border: 1px solid #BC0303;
+  list-style-type: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease-out; }
+
+.indicators li.active {
+  background: #BC0303; }
+
+.indicators li:hover {
+  background-color: #3c3c3b; }
+
+/**
+ * ==========================
+ * Arrows 
+ *
+ */
+.arrow {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  border-top: 0.3rem solid #EFEFEF;
+  border-right: 0.3rem solid #EFEFEF;
+  cursor: pointer;
+  transition: border-color 0.3s ease-out; }
+
+.arrow:hover {
+  border-color: #BC0303; }
+
+.arrow-left {
+  left: 20px;
+  transform: rotate(225deg); }
+
+.arrow-right {
+  right: 20px;
+  transform: rotate(45deg); }
+
+/**
+ * ==========================
+ * For demo purposes only
+ * 
+ * Please note that the styles below are used
+ * for the purposes of this demo only. There is no need
+ * to use these in any of your own projects
+ *
+ */
+.slide {
+  background-size: cover; }
+
+.slide-text {
+  padding: 3rem; }
+  .slide-text__text-sessao {
+    color: #fff;
+    background-color: #BC0303;
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    border-radius: 3px; }
+  .slide-text__text-film {
+    color: #EFEFEF;
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.2px;
+    font-size: 4.2rem;
+    font-weight: 900;
+    line-height: 1; }
+    .slide-text__text-film:not(:last-child) {
+      margin-bottom: 3rem; }
+  .slide-text__text-director {
+    color: #EFEFEF;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1; }
+
+.slide:nth-child(1) {
+  background-image: url(../img/slider/slider-4.jpg); }
+
+.slide:nth-child(2) {
+  background-image: url(../img/slider/slider-5.jpg); }
+
+.slide:nth-child(3) {
+  background-image: url(../img/slider/slider-6.jpg); }
+
+.acervo {
+  margin: 8rem 3rem; }
+
+.acervo-homenagem {
+  margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .acervo-homenagem {
+      margin-top: 4rem; } }
+  .acervo-homenagem__heading {
+    align-self: center;
+    color: #BC0303;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+    @media (max-width: 56.25em) {
+      .acervo-homenagem__heading {
+        padding: 3rem;
+        font-size: 4.2rem;
+        line-height: 1; } }
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  justify-content: space-between;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      flex-direction: column;
+      height: 40rem; } }
+  .footer__logo-box {
+    display: inline-block;
+    flex-grow: 2;
+    align-self: center; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 2rem; } }
+  .footer__logo {
+    height: 8rem;
+    display: inline-block; }
+  .footer__text-box {
+    display: inline-block;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    align-self: center; }
+    @media (max-width: 56.25em) {
+      .footer__text-box {
+        margin-right: 0; } }
+  .footer__email-box {
+    align-self: center;
+    text-align: right;
+    display: inline-block;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    flex-grow: 1; }
+    @media (max-width: 56.25em) {
+      .footer__email-box {
+        text-align: center;
+        margin-right: 0;
+        font-size: 2rem; } }
+
+.row {
+  max-width: 132rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 *6rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 *6rem) / 4); }
+  .row .col-2-of-3 {
+    width: calc(2*((100% - 2 *6rem) / 3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc(2*((100% - 3 *6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3*((100% - 3 *6rem) / 4) + 2*6rem); }
+
+.header-top {
+  position: relative; }
+  .header-top__nav-top {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #000;
+    color: #fff;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .32px; }
+    .header-top__nav-top::after {
+      content: '';
+      display: table;
+      clear: both; }
+    @media (max-width: 37.5em) {
+      .header-top__nav-top {
+        font-size: 1.5rem;
+        letter-spacing: 0; } }
+  .header-top__text {
+    float: left; }
+  .header-top__mlb-link:link, .header-top__mlb-link:visited {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s; }
+  .header-top__mlb-link:hover {
+    opacity: .7; }
+  .header-top__icons-box {
+    float: right;
+    font-size: 1.8rem; }
+    .header-top__icons-box--icon {
+      margin-left: 5rem; }
+      .header-top__icons-box--icon:link, .header-top__icons-box--icon:visited {
+        color: #fff;
+        text-decoration: none;
+        transition: all .2s; }
+      .header-top__icons-box--icon:hover, .header-top__icons-box--icon:active {
+        opacity: .7; }
+    @media (max-width: 37.5em) {
+      .header-top__icons-box {
+        display: none;
+        float: none; } }
+    @media (max-width: 56.25em) {
+      .header-top__icons-box {
+        display: none;
+        float: none; } }
+  @media (max-width: 37.5em) {
+    .header-top {
+      text-align: center; } }
+  @media (max-width: 56.25em) {
+    .header-top {
+      text-align: center; } }
+
+.navigation {
+  padding: 0 3rem;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between; }
+  .navigation::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .navigation__logo-box {
+    flex-grow: 1; }
+  .navigation__logo-text, .navigation__logo-text:link, .navigation__logo-text:visited, .navigation__logo-text:active {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 5.6rem;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    transition: all 2s; }
+  .navigation__logo-text:hover, .navigation__logo-text:focus {
+    opacity: .8; }
+  .navigation__bar-box {
+    flex-grow: 1;
+    align-self: center; }
+  .navigation__bar {
+    flex-grow: 0;
+    align-self: center;
+    display: block;
+    width: .5rem;
+    height: 5.5rem;
+    background-color: #BC0303;
+    transform: rotate(-35deg); }
+    @media (max-width: 37.5em) {
+      .navigation__bar {
+        height: 4.5rem; } }
+  .navigation__mostra {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -.36px;
+    flex-grow: 0;
+    align-self: center; }
+    .navigation__mostra--1 {
+      display: block;
+      margin-bottom: -1.5rem; }
+  .navigation__nav {
+    list-style: none;
+    align-self: center;
+    margin-left: auto;
+    flex-grow: 3;
+    text-align: right; }
+    @media (max-width: 75em) {
+      .navigation__nav {
+        display: none; } }
+    @media (max-width: 37.5em) {
+      .navigation__nav {
+        display: none; } }
+    @media (max-width: 56.25em) {
+      .navigation__nav {
+        display: none; } }
+  .navigation__item {
+    display: inline-block; }
+    .navigation__item:not(:last-child) {
+      padding-right: 2rem; }
+  .navigation__link:link, .navigation__link:visited {
+    text-decoration: none;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: .5px;
+    color: #000;
+    transition: all .2s; }
+  .navigation__link:hover {
+    color: #BC0303; }
+  .navigation__data {
+    flex-grow: 0;
+    align-self: center; }
+    @media (max-width: 75em) {
+      .navigation__data {
+        margin-left: 10rem; } }
+    @media (max-width: 37.5em) {
+      .navigation__data {
+        display: none; } }
+    @media (max-width: 56.25em) {
+      .navigation__data {
+        display: none; } }
+  .navigation__data-text {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #000; }
+    .navigation__data-text--2 {
+      display: block;
+      margin-top: -2rem; }
+  .navigation__data-bar {
+    display: inline-block;
+    width: 8rem;
+    height: 3px;
+    background-color: #000; }
+  .navigation__dropdown {
+    cursor: pointer;
+    position: relative;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: .5px;
+    color: #000;
+    transition: all .2s; }
+    .navigation__dropdown:hover {
+      color: #BC0303; }
+  .navigation__dropdown-checkbox {
+    display: none; }
+  .navigation__dropdown-nav {
+    position: fixed;
+    height: 12rem;
+    top: -10rem;
+    opacity: 0;
+    transform: translateX(-15%);
+    z-index: -15000;
+    background-color: #000;
+    padding: 1.5rem 3rem;
+    transition: all .5s; }
+  .navigation__dropdown-checkbox:checked ~ .navigation__dropdown-nav {
+    opacity: 1;
+    top: 12rem;
+    z-index: 1500;
+    background-color: #EFEFEF; }
+  .navigation__dropdown-checkbox:checked ~ .navigation__dropdown {
+    color: #BC0303; }
+  .navigation__dropdown-item {
+    display: block;
+    text-align: center; }
+    .navigation__dropdown-item:not(:last-child) {
+      margin-bottom: 2rem; }
+  .navigation__dropdown-link {
+    text-decoration: none;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    color: #000;
+    transition: all .2s; }
+    .navigation__dropdown-link:hover {
+      color: #BC0303; }
+
+.data-mobile {
+  background-color: #BC0303;
+  text-align: center; }
+  .data-mobile__data-text {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #000; }
+  .data-mobile__data-bar {
+    display: inline-block;
+    width: 47%;
+    height: 3px;
+    background-color: #000; }
+  @media (min-width: 56.25em) {
+    .data-mobile {
+      display: none; } }
+
+.dropdown-icon {
+  color: #BC0303;
+  font-size: 1.6rem; }
+
+.textos {
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .textos {
+      margin-top: 0;
+      padding: 0 3rem; } }
+  .textos__img {
+    background-size: cover;
+    background-position: center;
+    height: 42rem;
+    width: 132rem;
+    border-radius: 5px; }
+    @media (max-width: 56.25em) {
+      .textos__img {
+        margin-top: 3rem;
+        border-radius: 0;
+        width: 100%; } }
+    .textos__img--1 {
+      background-image: url(../img/nmck-2.jpg); }
+    .textos__img--2 {
+      background-image: url(../img/textos/enquadrando-o-enquadrador.png); }
+    .textos__img--3 {
+      background-image: url(../img/textos/estamos-todos-aqui.jpg); }
+    .textos__img--4 {
+      background-image: url(../img/textos/levante.jpg); }
+  .textos__author {
+    color: #BC0303;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    line-height: 1; }
+  .textos__author-resume {
+    color: #707070;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: none; }
+  .textos__heading {
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1.6rem;
+    text-decoration: none; }
+  .textos__data {
+    color: #BC0303;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    line-height: 1; }
+  .textos__resume {
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #3c3c3b;
+    margin-bottom: 1.6rem; }
+    @media (max-width: 56.25em) {
+      .textos__resume {
+        font-size: 2rem; } }
+
+.textos-grid {
+  margin: 8rem; }
+
+.lona-abriga-embreve {
+  font-size: 4.8rem;
+  font-family: "Saira condensed", sans-serif;
+  height: 80vh;
+  text-align: center;
+  margin-top: 25vh;
+  color: #BC0303; }
+
+.campanha-header {
+  padding: 8rem 0; }
+  @media (max-width: 56.25em) {
+    .campanha-header {
+      padding-top: 0; } }
+  .campanha-header__heading {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 5.6rem;
+    color: #BC0303;
+    line-height: 1;
+    margin-bottom: 1.6rem; }
+    @media (max-width: 56.25em) {
+      .campanha-header__heading {
+        padding: 0 3rem; } }
+  .campanha-header__lead {
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem; }
+    @media (max-width: 56.25em) {
+      .campanha-header__lead {
+        padding: 0 3rem; } }
+  .campanha-header__contribua {
+    margin-top: -15rem;
+    text-align: center; }
+    @media (max-width: 56.25em) {
+      .campanha-header__contribua {
+        padding: 0 3rem; } }
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9999; }
+
+.banner {
+  padding: 5rem 3rem; }
+
+.sessoes {
+  padding: 5rem 3rem;
+  background-color: #EFEFEF; }
+  .sessoes__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem; }
+  .sessoes__heading {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #BC0303;
+    margin-right: 3rem;
+    text-decoration: none; }
+  .sessoes__header-barra {
+    background-color: #BC0303;
+    height: .3rem;
+    flex: 1;
+    align-self: center;
+    margin-right: 3rem; }
+    .sessoes__header-barra--encerramento {
+      margin-right: 0; }
+
+.sessao-textos-criticos {
+  margin-top: 5rem;
+  margin-bottom: 8rem; }
+
+.encerramento {
+  margin-top: 5rem; }
+  @media (max-width: 56.25em) {
+    .encerramento {
+      margin-left: 3rem;
+      margin-right: 3rem; } }
+
+.lancamentos {
+  margin-top: 3rem; }
+
+.banner-mostras {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .banner-mostras {
+      margin-top: 0; } }
+  .banner-mostras__content {
+    height: 42rem;
+    border-radius: 5px; }
+    .banner-mostras__content--1 {
+      background-image: url(../img/mostras/atravessamentos_site.jpg);
+      background-size: cover; }
+    .banner-mostras__content--2 {
+      background-image: url(../img/mostras/acervo_site.jpg);
+      background-size: cover; }
+    .banner-mostras__content--3 {
+      background-image: url(../img/mostras/homenagem_site.jpg);
+      background-size: cover; }
+    @media (max-width: 56.25em) {
+      .banner-mostras__content {
+        width: 100%; } }
+  .banner-mostras__heading {
+    position: absolute;
+    top: 32rem;
+    left: 3rem;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 5.6rem;
+    color: #fff; }
+    @media (max-width: 56.25em) {
+      .banner-mostras__heading {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        line-height: 1; } }
+
+@media (max-width: 56.25em) {
+  .text-mostras {
+    padding: 3rem; } }
+
+.text-mostras__bar-box {
+  margin: 3rem 1rem; }
+  @media (max-width: 56.25em) {
+    .text-mostras__bar-box {
+      position: relative;
+      height: 4.2rem; } }
+
+.text-mostras__bar {
+  display: block;
+  width: .5rem;
+  height: 4.2rem;
+  background-color: #BC0303;
+  transform: rotate(-35deg); }
+  @media (max-width: 56.25em) {
+    .text-mostras__bar {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%), rotate(-35deg); } }
+
+.text-mostras__heading-film {
+  display: inline-block;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000; }
+  @media (max-width: 56.25em) {
+    .text-mostras__heading-film {
+      font-size: 2rem; } }
+
+.text-mostras__text-tec {
+  display: inline-block;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000; }
+  @media (max-width: 56.25em) {
+    .text-mostras__text-tec {
+      font-size: 2rem; } }
+
+.sessao-mostras {
+  padding-bottom: 8rem; }
+
+/* .row {
+    margin-bottom: 2.4rem !important;
+} */
+.nav-prog {
+  background-color: #BC0303;
+  width: 100%;
+  height: 5rem;
+  position: sticky;
+  top: 89px;
+  z-index: 9999; }
+  @media (max-width: 56.25em) {
+    .nav-prog {
+      display: none; } }
+  @media (max-width: 56.25em) {
+    .nav-prog {
+      top: 13rem; } }
+  .nav-prog__nav {
+    list-style: none;
+    text-align: center; }
+  .nav-prog__nav-item {
+    margin-top: 1.2rem;
+    display: inline-block; }
+    .nav-prog__nav-item:not(:last-child) {
+      padding-right: 8rem; }
+  .nav-prog__nav-link:link, .nav-prog__nav-link:visited, .nav-prog__nav-link:active {
+    text-decoration: none;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #fff;
+    transition: all .2s; }
+    @media (max-width: 56.25em) {
+      .nav-prog__nav-link:link, .nav-prog__nav-link:visited, .nav-prog__nav-link:active {
+        color: #000; } }
+  .nav-prog__nav-link:hover {
+    color: #000; }
+
+.programacao {
+  margin-top: 5rem;
+  padding: 5rem; }
+  .programacao__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: start; }
+  .programacao__bar-box {
+    margin-right: 3.2rem;
+    align-self: center; }
+  .programacao__bar {
+    align-self: center;
+    display: block;
+    width: .5rem;
+    height: 3.2rem;
+    background-color: #000;
+    transform: rotate(-35deg); }
+  .programacao__heading-sessao {
+    align-self: center;
+    color: #BC0303;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .programacao__heading-sessao-2 {
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+    color: #BC0303; }
+  .programacao__text-resume {
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem; }
+    @media (max-width: 56.25em) {
+      .programacao__text-resume {
+        font-size: 2rem; } }
+    .programacao__text-resume--1 {
+      width: 75%; }
+      @media (max-width: 56.25em) {
+        .programacao__text-resume--1 {
+          width: 100%; } }
+  .programacao__heading-film {
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 2.4rem;
+    font-weight: 700; }
+  .programacao__text-tec {
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1.6rem; }
+  .programacao__divider {
+    background-color: #fff;
+    height: .5px;
+    margin: 1.6rem 0 .8rem; }
+    .programacao__divider--1 {
+      width: 70%; }
+    .programacao__divider--2 {
+      width: 100%; }
+
+.film-review {
+  margin-top: 3rem;
+  height: 100%; }
+  .film-review__sessao-name {
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+    color: #BC0303; }
+    @media (max-width: 56.25em) {
+      .film-review__sessao-name {
+        padding: 0 3rem; } }
+  .film-review__picpay-box, .film-review__picpay-box:link, .film-review__picpay-box:visited {
+    display: block;
+    text-align: center; }
+  .film-review__picpay {
+    width: 50%;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: all .2s; }
+    .film-review__picpay--campanha {
+      width: 100%; }
+    .film-review__picpay:hover {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+      transform: scale(1.05); }
+      @media (max-width: 56.25em) {
+        .film-review__picpay:hover {
+          transform: scale(1);
+          box-shadow: none; } }
+    .film-review__picpay:active, .film-review__picpay:focus {
+      transform: scale(0.95);
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+      @media (max-width: 56.25em) {
+        .film-review__picpay:active, .film-review__picpay:focus {
+          transform: scale(1);
+          box-shadow: none; } }
+  .film-review__heading {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1; }
+    @media (max-width: 56.25em) {
+      .film-review__heading {
+        padding: 0 3rem; } }
+  .film-review__film-tec {
+    margin-bottom: 3rem;
+    color: #000;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.1; }
+    @media (max-width: 56.25em) {
+      .film-review__film-tec {
+        padding: 0 3rem; } }
+  .film-review__sinopse {
+    font-family: "Saira", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .film-review__sinopse {
+        padding: 0 3rem;
+        font-size: 2rem;
+        margin-bottom: 0; } }
+
+.sessao__share {
+  margin-top: 3.2rem; }
+  @media (max-width: 56.25em) {
+    .sessao__share {
+      margin-top: -5rem;
+      padding: 2rem 3rem; } }
+
+.sessao__share-link {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #BC0303;
+  text-decoration: none; }
+  @media (max-width: 56.25em) {
+    .sessao__share-link {
+      font-size: 2rem; } }
+  .sessao__share-link:hover {
+    color: #000; }
+
+.sessao__icon {
+  color: #BC0303;
+  font-size: 2.4rem;
+  text-decoration: none; }
+  .sessao__icon:hover {
+    color: #000; }
+
+.sobre {
+  background-color: #BC0303;
+  padding: 8rem 0; }
+  .sobre__text {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.6rem; }
+    .sobre__text a, .sobre__text a:link, .sobre__text a:visited {
+      color: #fff; }
+    .sobre__text a:hover {
+      color: #000; }
+    @media (max-width: 56.25em) {
+      .sobre__text {
+        font-size: 2rem;
+        padding: 0 3rem; } }
+  .sobre__email {
+    color: #fff;
+    font-size: 2.4rem; }
+  .sobre__contato {
+    text-align: center; }
+  .sobre__icon {
+    color: #fff;
+    font-size: 2.4rem;
+    text-decoration: none; }
+    .sobre__icon:hover {
+      color: #000; }
+  .sobre__ficha-tec {
+    padding-left: 8rem; }
+    @media (max-width: 56.25em) {
+      .sobre__ficha-tec {
+        padding: 0 3rem; } }
+    .sobre__ficha-tec--heading {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff; }
+      @media (max-width: 56.25em) {
+        .sobre__ficha-tec--heading {
+          font-size: 2rem; } }
+    .sobre__ficha-tec--author {
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 1.6rem; }
+      @media (max-width: 56.25em) {
+        .sobre__ficha-tec--author {
+          font-size: 2rem; } }
+    .sobre__ficha-tec--author-link {
+      color: #fff; }
+      .sobre__ficha-tec--author-link:hover {
+        color: #000;
+        text-decoration: underline; }

@@ -1,0 +1,43 @@
+.campanha-header {
+
+    padding: 8rem 0;
+    
+    @include respond(tab-port) {
+        padding-top: 0;
+    }
+
+    &__heading {
+        font-family: "Saira Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 5.6rem;
+        color: $color-red-1;
+        line-height: 1;
+        margin-bottom: 1.6rem;
+
+        @include respond(tab-port) {
+            padding: 0 3rem;
+        }
+    }
+
+    &__lead {
+        font-family: "Saira", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2.4rem;
+
+        @include respond(tab-port) {
+            padding: 0 3rem;
+        }
+
+    }
+    
+
+    &__contribua {
+        margin-top: -15rem;
+        text-align: center;
+
+        @include respond(tab-port) {
+            padding: 0 3rem;
+        }
+    }
+}

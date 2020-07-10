@@ -1,0 +1,633 @@
+.card {
+  &__content {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      height: 48rem;
+      padding: 3rem;
+      transform: scale(1);
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      backface-visibility: hidden;
+    }
+
+    &--text {
+      height: 100% !important;
+    }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////PÁGINA PRINCIPAL///////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+
+    &--1 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-1.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--1-2 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-1-2.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--2 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-2.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--3 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-3.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--4 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-4.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--5 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-5.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--6 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-6.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--7 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-7.png);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--8 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-8.jpg);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    &--9 {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/sessoes-cards/card-9.jpg);
+      }
+
+      &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////CARDS ACERVO///////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  &--1-rua-publica {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/1-rua-publica.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////  
+  &--2-ultima-noite {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/2-ultima-noite.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  //////////////////////////////////////////////////////////////////////////////// 
+  &--3-aniversario-e-castigo {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/3-aniversario-e-castigo.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--4-carolinas {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/3-carolinas.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--5-casa-com-parede {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/5-casa-com-parede.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--6-casa-na-marra {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/6-casa-na-marra.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--7-conte-isso {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/7-conte-isso.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--8-izidora {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/8-izidora.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--9-lanceiros {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/9-lanceiros.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--10-lenigrado {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/10-lenigrado.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--11-menino-mitou {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/11-menino-mitou.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+    &--12-na-missao {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/12-na-missao.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--13-ocupar-resistir {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/13-ocupar-resistir.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--14-palmilha {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/14-palmilha.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  //////////////////////////////////////////////////////////////////////////////// 
+  &--15-quem-luta {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/15-quem-luta.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////   
+  &--16-voce-faria {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/16-voce-faria.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////
+  &--17-zaga-de-bonecas {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/17-zaga-de-bonecas.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////
+    &--18-izidora-dias-de-luta {
+      &::after {
+        @include card-after-bg;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+        background-image: url(../img/acervo-cards/18-izidora-dias-de-luta.png);
+      }
+  
+      &:hover {
+          &::after {
+            filter: brightness(30%);
+          }
+        }
+      } 
+      ////////////////////////////////////////////////////////////////////////////////
+      &--19-memorias-de-izidora {
+        &::after {
+          @include card-after-bg;
+          transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+          background-image: url(../img/acervo-cards/19-memorias-de-izidora.png);
+        }
+    
+        &:hover {
+            &::after {
+              filter: brightness(30%);
+            }
+          }
+        }  
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////CARDS HOMENAGEM////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////// 
+  &--1-fruto-da-terra {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/1-fruto-da-terra.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  //////////////////////////////////////////////////////////////////////////////// 
+  &--2-pinheirinho {
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/2-pinheirinho.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  //////////////////////////////////////////////////////////////////////////////// 
+  &--3-terra-para-rose{
+    &::after {
+      @include card-after-bg;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+      background-image: url(../img/acervo-cards/3-terra-para-rose.png);
+    }
+
+    &:hover {
+        &::after {
+          filter: brightness(30%);
+        }
+      }
+    }
+  ////////////////////////////////////////////////////////////////////////////////  
+
+  &--bg {
+    &::after {
+      filter: brightness(60%) grayscale(1);
+    }
+  }
+
+    & > * {
+      z-index: 1000;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: $box-shadow-card;
+
+        @include respond(tab-port) { 
+          transform: scale(1);
+          box-shadow: none;         
+        }
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(0.95);
+      box-shadow: $box-shadow-card-press;
+        
+        @include respond(tab-port) { 
+          transform: scale(1);
+          box-shadow: none;         
+        }
+      
+    }
+  }
+
+  &__heading-sessao {
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+    color: $color-white;
+
+    transition: all 0.2s;
+    
+
+    &--barra {
+      display: inline-block;
+      color: $color-red-1;
+      font-weight: 900;
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__heading-film {
+    color: $color-white;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    @include respond(tab-port) { // width < 900
+      font-size: 3rem;
+      line-height: 1;      // 1 rem = 8px, 8/16 = 50%
+    }
+
+    &--acervo {
+      transition: all 0.2s;
+      font-size: 3.2rem;
+    }
+
+    &--text {
+      color: $color-black;
+      margin-bottom: 1.6rem !important;
+    }
+
+    &--text-resumo {
+      color: $color-black;
+      font-family: "Saira", sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__text-tec {
+    color: $color-white;
+    font-family: "Saira Condensed", sans-serif;
+    letter-spacing: 0.32px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+    height: 0;
+    line-height: 1.2;
+    opacity: 0;
+
+    &--nohide {
+      height: 100%;
+      opacity: 1;  
+    }
+
+    @include respond(tab-port) { // width < 900
+      height: 100%;
+      opacity: 1;        // 1 rem = 8px, 8/16 = 50%
+    }
+
+    &--sinopse {
+      transition: all 0.5s ease;
+      font-weight: 300;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &:hover &__text-tec {
+    opacity: 1;
+    height: 100%;
+  }
+
+
+  &:hover &__heading-sessao {
+    color: $color-red-1;
+  }
+
+  &:hover &__heading-film--acervo {
+    color: $color-red-1;
+  }
+}

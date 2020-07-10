@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37853607-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37853607-3');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mostra cinemas e territórios MLB" />
+    <meta
+      name="keywords"
+      content="cinema, mostra, luta, mlb, ocupação, territorios, guerrilha, cinema latino americano, cinema do sul"
+    />
+    <meta name="author" content="André Victor" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700;800;900&family=Saira:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style20200703131108.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/lona-favicon.png" />
+
+    <title>LONA — Mostra Cinemas e Territórios</title>
+  </head>
+  <body>
+    <section class="header-top__nav-top">
+      <div class="header-top__text">
+        <p>
+          Realização
+          <a href="https://www.mlbbrasil.org/" class="header-top__mlb-link"
+            >MLB - Movimento de Luta nos Bairros, Vilas e Favelas</a
+          >
+        </p>
+      </div>
+      <div class="header-top__icons-box">
+        <a href="https://www.instagram.com/movimento_de_luta_nos_bairros/" class="header-top__icons-box--icon fab fa-instagram"></a>
+        <a href="https://pt-br.facebook.com/mlbrio/" class="header-top__icons-box--icon fab fa-facebook-f"></a>
+      </div>
+    </section>
+
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__logo-box">
+          <a href="index.html" class="navigation__logo-text">LONA</a>
+        </div>
+        <div class="navigation__bar-box">
+          <span class="navigation__bar">&nbsp;</span>
+        </div>
+        <div class="navigation__mostra">
+          <span class="navigation__mostra--1">Mostra Cinemas </span>
+          <span class="navigation__mostra--2">e Territórios </span>
+        </div>
+        <ul class="navigation__nav">
+          <li class="navigation__item">
+            <a href="acervo.html" class="navigation__link">acervo</a>
+          </li>
+          <li class="navigation__item">
+            <a href="programacao.html" class="navigation__link">debates</a>
+          </li>
+          <li class="navigation__item">
+            <a href="lona-abriga.html" class="navigation__link">lona abriga</a>
+          </li>
+          <li class="navigation__item">
+            <input type="checkbox" class="navigation__dropdown-checkbox" id="dropdown-toggle">
+            <label for="dropdown-toggle" class="navigation__dropdown-button">
+            <span class="navigation__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down dropdown-icon"></i></span>
+            </label>
+                <ul class="navigation__dropdown-nav" id="dropdown">
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras.html" class="navigation__dropdown-link">mostra atravessamentos</a>
+                  </li>
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras/homenagem.html" class="navigation__dropdown-link">programa homenagem</a>
+                  </li>
+                </ul>
+          </li>
+          <li class="navigation__item">
+            <a href="campanha.html" class="navigation__link">rede solidária</a>
+          </li>
+          <li class="navigation__item">
+            <a href="sobre.html" class="navigation__link">sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-mobile">
+        <input type="checkbox" class="navigation-mobile__checkbox" id="navi-toggle">
+  
+        <label for="navi-toggle" class="navigation-mobile__button">
+          <span class="navigation-mobile__icon">&nbsp;</span>
+        </label>
+  
+        <div class="navigation-mobile__background">&nbsp;</div>
+
+        <div class="navigation-mobile__nav">
+          <ul class="navigation-mobile__list">
+            <li class="navigation-mobile__item">
+              <a href="acervo.html" class="navigation-mobile__link">acervo</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="programacao.html" class="navigation-mobile__link">debates</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="lona-abriga.html" class="navigation-mobile__link">lona abriga</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="campanha.html" class="navigation-mobile__link">rede solidária</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="sobre.html" class="navigation-mobile__link">sobre</a>
+            </li>
+
+                        
+            <li class="navigation-mobile__item">
+              <input type="checkbox" class="navigation-mobile__dropdown-checkbox" id="dropdown-mobile-toggle">
+              <label for="dropdown-mobile-toggle" class="navigation-mobile__dropdown-button">
+              <span class="navigation-mobile__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down navigation-mobile__dropdown-icon"></i></span>
+              </label>
+                  <ul class="navigation-mobile__dropdown-nav">
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras.html" class="navigation-mobile__dropdown-link">mostra atravessamentos</a>
+                    </li>
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras/homenagem.html" class="navigation-mobile__dropdown-link">programa homenagem</a>
+                    </li>
+                  </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+      <!-- <section class="nav-prog">
+        <ul class="nav-prog__nav">
+          <li class="nav-prog__nav-item">
+            <a href="#atravessamentos" class="nav-prog__nav-link">Atravessamentos</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#acervo" class="nav-prog__nav-link">Acervo</a>
+          </li>
+          <li class="nav-prog__nav-item">
+            <a href="#homenagem" class="nav-prog__nav-link">Homenagem</a>
+          </li>
+        </ul>
+      </section> -->
+
+      <section class="acervo-homenagem">
+        <div class="row u-margin-buttom-small">
+        <h1 class="acervo-homenagem__heading">Mostra Atravessamentos</h1>
+          <div class="text-mostras">
+            <div class="text-mostras__text-box">
+              <p class="programacao__text-resume programacao__text-resume--1">
+                Brasil, 2020. Isto não é um roteiro de ficção científica.                
+              </p>
+              <p class="programacao__text-resume programacao__text-resume--1">
+                Ameaças de catástrofes sem precedentes, que de certo modo acompanham os contornos geopolíticos de todo o globo, misturam-se ao cinismo brutal de uma política mortífera que brinca com o valor da vida. No centro desse labirinto desolador, dessa encruzilhada política que consome nossa história, sobrepondo-se às muitas camadas de violência que a memória estende, encontra-se a questão primordial do território.
+              </p>
+              <p class="programacao__text-resume programacao__text-resume--1">
+                Territórios que faltam, contrariando o direito fundamental de morar. Territórios expropriados, latifúndios que usurpam o solo de povos originários constantemente dizimados. Territórios em disputa, na zona condensada de injustiças que costumamos chamar de “cidade”. Territórios distantes, na crueldade sofrida pelos sujeitos das diásporas. Territórios inexistentes, onde os próprios mundos daqueles que os desejam estão sob ameaça.
+              </p>
+              <p class="programacao__text-resume programacao__text-resume--1">
+                Em meio a lutas tão concretas pela vida e pela terra, pela possibilidade de existir e construir lugar no mundo, de que modo o cinema pode agir e atuar para estar à altura das tarefas incansáveis de quem ainda resiste? Como pode essa máquina de fazer imagens, de contar histórias, de recordar o mundo, tantas vezes colocada ao lado de quem perpetra, viola ou oprime, assumir o enfrentamento do poder, ajudando a reverter os desequilíbrios de todo um cosmos? Não são perguntas fáceis, mas é algo delas que nos move a reunir esse conjunto de filmes sob o signo do atravessamento – isto é, da interseção, da convergência, da repercussão entre diversas lutas. Indígenas, quilombolas, periféricas, rurais, femininas, populares, ambientais, lutas que faltam palavras para nomear. Filmes, por sua vez, feitos não necessariamente para a tela de cinema, para o modelo hegemônico da sala escura, mas, sobretudo, filmes da lona, feitos para a lona, esse símbolo elementar de uma urgência, de um processo, de um lugar sonhado muito real.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sessoes">
+
+        <div class="row">
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a
+                href="sessoes/abertura.html"
+                class="card__content card__content--bg card__content--1"
+              >
+                <h4 class="card__heading-sessao">
+                  <p class="card__heading-sessao--barra">\</p>
+                  Sessão 1 — indisponível
+                </h4>
+
+                <h3 class="card__heading-film">Casa com Parede</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Dênia Cruz <br />
+                  16" — 2019
+                </h5>
+
+                <h3 class="card__heading-film">Ocupar, Resistir e Construir</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Dayanne Naessa, Edinho Vieira, Juliano Vitral, Roberta Von
+                  Randow <br />
+                  14" — 2016
+                </h5>
+
+                <h3 class="card__heading-film">Na Missão, com Kadu</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Aiano Bemfica, Kadu Freitas, Pedro Maia de Brito <br />
+                  28" — 2016
+                </h5>
+              </a>
+            </div>
+          </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <a
+              href="sessoes/23-sabado.html"
+              class="card__content card__content--bg card__content--1-2"
+            >
+              <h4 class="card__heading-sessao">
+                <p class="card__heading-sessao--barra">\</p>
+                Sessão 2 — indisponível
+              </h4>
+
+              <h3 class="card__heading-film">Quilombo Rio dos Macacos</h3>
+              <h5 class="card__text-tec card__text-tec--nohide">
+                Josias Pires <br />
+                120" — 2017
+              </h5>             
+            </a>
+          </div>
+        </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a href="sessoes/24-domingo.html" class="card__content card__content--bg card__content--2">
+                <h4 class="card__heading-sessao">
+                  <p class="card__heading-sessao--barra">\</p>
+                  Sessão 3 — indisponível
+                </h4>
+                <h3 class="card__heading-film">
+                  Conte isso àqueles que dizem que fomos derrotados
+                </h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Aiano Mineiro, Camila Bastos, Cris Araujo, Pedro Maia de Brito
+                  <br />
+                  28" — 2018
+                </h5>
+                <h3 class="card__heading-film">
+                  ZAWXIPERKWER KA’A – Guardiões da Floresta
+                </h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Jocy Guajajara, Milson Guajajara <br />
+                  50" — 2019
+                </h5>
+                <h3 class="card__heading-film">Ameaçados</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Júlia Mariano <br />
+                  22" — 2014
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>
+          
+          <div class="row">
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <a href="sessoes/25-segunda.html" class="card__content card__content--bg card__content--3">
+                  <h4 class="card__heading-sessao">
+                    <p class="card__heading-sessao--barra">\</p>
+                    Sessão 4 — indisponível
+                  </h4>
+  
+                  <h3 class="card__heading-film">
+                    Derrubada
+                  </h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">
+                    Mirrah Iañez <br />
+                    4" — 2016
+                  </h5>
+  
+                  <h3 class="card__heading-film">
+                    Estamos todos aqui
+                  </h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">
+                    Rafael Mellin e Chico Santos <br />
+                    20" — 2018
+                  </h5>
+  
+                  <h3 class="card__heading-film">Dia de Festa</h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">
+                    Pablo Georgieff e Toni Venturi <br />
+                    77" — 2006
+                  </h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="card">
+                <a href="sessoes/26-terca.html" class="card__content card__content--bg card__content--4">
+                  <h4 class="card__heading-sessao">
+                    <p class="card__heading-sessao--barra">\</p>
+                    Sessão 5 — indisponível
+                  </h4>
+                  <h3 class="card__heading-film">Furna dos Negros</h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">Wladymir Lima <br />29" — 2017</h5>
+                  <h3 class="card__heading-film">Do corpo da terra</h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">
+                    Julia Mariano <br />
+                    24" — 2016
+                  </h5>
+                  <h3 class="card__heading-film">Nove Águas</h3>
+                  <h5 class="card__text-tec card__text-tec--nohide">
+                    Gabriel Martins e Quilombo dos Marques <br />
+                    25" — 2019
+                  </h5>
+                </a>
+              </div>
+            </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a
+                href="sessoes/27-quarta.html"
+                class="card__content card__content--bg card__content--5"
+              >
+                <h4 class="card__heading-sessao">
+                  <p class="card__heading-sessao--barra">\</p>
+                  Sessão 6 — indisponível
+                </h4>
+
+                <h3 class="card__heading-film">Brooklin</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Coletivo CineLeblon <br />
+                  22" — 2019
+                </h5>
+
+                <h3 class="card__heading-film">
+                  Associação de Moradores do Guararape
+                </h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Sergio Péo <br />
+                  14" — 1979
+                </h5>
+
+                <h3 class="card__heading-film">Território Ocupado</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Coletivo Cinema e Sal <br />
+                  15" — 2018
+                </h5>
+
+                <h3 class="card__heading-film">Rap, o canto da Ceilândia</h3>
+                <h5 class="card__text-tec card__text-tec--nohide">
+                  Adirley Queiroz <br />
+                  15" — 2005
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>  
+        
+        <div class="row">
+                 
+            <div class="col-1-of-3">
+                <div class="card">
+                  <a href="sessoes/28-quinta.html" class="card__content card__content--bg card__content--7">
+                    <h4 class="card__heading-sessao">
+                      <p class="card__heading-sessao--barra">\</p>
+                      INDISPONÍVEL
+                    </h4>
+    
+                    <h3 class="card__heading-film">
+                      Chão
+                    </h3>
+                    <h5 class="card__text-tec card__text-tec--nohide">
+                      Camila Freitas <br />
+                      112" — 2019
+                    </h5>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-1-of-3">
+                <div class="card">
+                  <a href="sessoes/29-sexta.html" class="card__content card__content--bg card__content--6">
+                    <h4 class="card__heading-sessao">
+                      <p class="card__heading-sessao--barra">\</p>
+                      Sessão 7 — indisponível
+                    </h4>
+                    <h3 class="card__heading-film">Yvy Renõi, Semente da Terra</h3>
+                    <h5 class="card__text-tec card__text-tec--nohide">
+                      Coletivo ASCURI <br />
+                      15" — 2017
+                    </h5>
+                    <h3 class="card__heading-film">Pra se contar uma história</h3>
+                    <h5 class="card__text-tec card__text-tec--nohide">
+                      Elen Linth, Lucicleide Santos, Diego Jesus e Leandro Rodrigues
+                      <br />
+                      25" — 2013
+                    </h5>
+                    <h3 class="card__heading-film">Ava Yvy Vera</h3>
+                    <h5 class="card__text-tec card__text-tec--nohide">
+                      Genito Gomes, Valmir Gonçalves Cabreira, Jhonn Nara Gomes,
+                      Jhonatan Gomes, Edina Ximenez, Dulcídio Gomes, Sarah Brites,
+                      Joilson Brites <br />
+                      54" — 2016
+                    </h5>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-1-of-3">
+                <div class="card">
+                  <a href="sessoes/30-sabado.html" class="card__content card__content--bg card__content--8">
+                    <h4 class="card__heading-sessao">
+                      <p class="card__heading-sessao--barra">\</p>
+                      INDISPONÍVEL
+                    </h4>
+                    <h3 class="card__heading-film">Cadê Edson?</h3>
+                    <h5 class="card__text-tec card__text-tec--nohide">
+                      Dácia Ibiapina <br />
+                      72" — 2019
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">     
+                  <div class="card">
+                    <a
+                      href="sessoes/encerramento.html"
+                      class="card__content card__content--bg card__content--9"
+                    >
+                      <h4 class="card__heading-sessao">
+                        <p class="card__heading-sessao--barra">\</p>
+                        Sessão de encerramento — indisponível
+                      </h4>
+      
+                      <h3 class="card__heading-film">ATL 2017 – Acampamento Terra Livre</h3>
+                      <h5 class="card__text-tec card__text-tec--nohide">
+                        Edgar Kanaykõ Xakriabá <br />
+                        Brasília (DF) &#8212; 6’50”' &#8212; 2017
+                      </h5>
+      
+                      <h3 class="card__heading-film">Guardiões da Memória</h3>
+                      <h5 class="card__text-tec card__text-tec--nohide">
+                        Alberto Alvarez <br/>
+                        Angra dos Reis / Paraty / Maricá / RJ &#8212; 55' &#8212; 2018
+                      </h5>
+      
+                      <h3 class="card__heading-film">O Último Sonho</h3>
+                      <h5 class="card__text-tec card__text-tec--nohide">
+                        Alberto Alvarez <br />
+                        Aldeia Sapukai / Angra dos Reis (RJ) &#8212; 61' &#8212; 2019
+                      </h5>
+                    </a>
+                  </div>
+          </div>
+        </section>
+
+<!--       <section class="sessao-mostras">
+      <div id="atravessamentos" class="row">
+        <section class="banner-mostras">
+          <div class="banner-mostras__content banner-mostras__content--1">
+
+            <h1 class="banner-mostras__heading">Mostra Atravessamentos</h1>
+          </div>
+        </section>
+        <div class="text-mostras">
+          <div class="text-mostras__text-box">
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Brasil, 2020. Isto não é um roteiro de ficção científica.                
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Ameaças de catástrofes sem precedentes, que de certo modo acompanham os contornos geopolíticos de todo o globo, misturam-se ao cinismo brutal de uma política mortífera que brinca com o valor da vida. No centro desse labirinto desolador, dessa encruzilhada política que consome nossa história, sobrepondo-se às muitas camadas de violência que a memória estende, encontra-se a questão primordial do território.
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Territórios que faltam, contrariando o direito fundamental de morar. Territórios expropriados, latifúndios que usurpam o solo de povos originários constantemente dizimados. Territórios em disputa, na zona condensada de injustiças que costumamos chamar de “cidade”. Territórios distantes, na crueldade sofrida pelos sujeitos das diásporas. Territórios inexistentes, onde os próprios mundos daqueles que os desejam estão sob ameaça.
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Em meio a lutas tão concretas pela vida e pela terra, pela possibilidade de existir e construir lugar no mundo, de que modo o cinema pode agir e atuar para estar à altura das tarefas incansáveis de quem ainda resiste? Como pode essa máquina de fazer imagens, de contar histórias, de recordar o mundo, tantas vezes colocada ao lado de quem perpetra, viola ou oprime, assumir o enfrentamento do poder, ajudando a reverter os desequilíbrios de todo um cosmos? Não são perguntas fáceis, mas é algo delas que nos move a reunir esse conjunto de filmes sob o signo do atravessamento – isto é, da interseção, da convergência, da repercussão entre diversas lutas. Indígenas, quilombolas, periféricas, rurais, femininas, populares, ambientais, lutas que faltam palavras para nomear. Filmes, por sua vez, feitos não necessariamente para a tela de cinema, para o modelo hegemônico da sala escura, mas, sobretudo, filmes da lona, feitos para a lona, esse símbolo elementar de uma urgência, de um processo, de um lugar sonhado muito real.
+              
+            </p>
+        </div>
+
+            <div class="text-mostras__bar-box">
+              <span class="text-mostras__bar">&nbsp;</span>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">Ameaçados</h3>
+              <h5 class="text-mostras__text-tec">
+                Júlia Mariano, 22' — 2014
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Associação de Moradores do Guararape
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Sergio Péo, 14' — 1979
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Ava Yvy Vera
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Genito Gomes, Valmir Gonçalves Cabreira, Jhonn Nara Gomes, Jhonatan Gomes, Edina Ximenez, Dulcídio Gomes, Sarah Brites, Joilson Brites, 54' — 2016
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Brooklin
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Coletivo CineLeblon, 22' — 2019
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Cadê Edson? 
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Dácia Ibiapina, 72' — 2019
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Chão
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Camila Freitas, 112' — 2019
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Derrubada
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Mirrah Iañez, 4' — 2016
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Dia de Festa
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Pablo Georgieff e Toni Venturi, 77' — 2006
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Do Corpo da Terra
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Julia Mariano, 24' — 2016
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Estamos Todos Aqu
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Rafael Mellin e Chico Santos, 20' — 2018
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Furna dos Negros
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Wladymir Lima, 29' — 2017
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Nove águas
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Gabriel Martins e Quilombo dos Marques, 25' — 2019
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Pra se contar uma história
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Elen Linth, Lucicleide Santos, Diego Jesus e Leandro Rodrigues, 25' — 2013
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Quilombo Rio dos Macacos 
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Josias Pires, 120' — 2017
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Rap, o canto da Ceilândia
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Adirley Queiroz, 15' — 2005
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Territorio Ocupado
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Coletivo Cinema e Sal, 15' — 2018
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                ZAWXIPERKWER KA’A
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Guardiões da Floresta — Jocy Guajajara, Milson Guajajara, 50' — 2019
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Yvy Renõi, Semente da Terra
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Coletivo ASCURI, 15' — 2017
+              </h5>
+            </div>
+          </div>
+      </div>
+
+      <div id="acervo" class="row">
+        <section class="banner-mostras">
+          <div class="banner-mostras__content banner-mostras__content--2">
+
+            <h1 class="banner-mostras__heading">Mostra Acervo</h1>
+          </div>
+        </section>
+        <div class="text-mostras">
+          <div class="text-mostras__text-box">
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Ao longo dos últimos anos, a produção e circulação de imagens em suas mais diversas complexidades têm, cada vez mais, se tornado mais uma forma de criação e participação política no seio de nossas lutas. Assim, oficinas, mostras, cineclubes e a realização de obras audiovisuais têm se consolidado como práticas perenes em nossos territórios e também como espaço para elaboração sobre o mundo. 
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Nesta aliança entre as lutas do <strong>MLB</strong> e o cinema, realizamos e assistimos diversos filmes sendo produzidos junto às ocupações e as lutas travadas pelo movimento em todo o Brasil. A <strong>Acervo</strong> é a nossa primeira oportunidade de colocar em diálogo essas produções em um mesmo lugar. A proposta é retomar nossas referências nas lutas, destacar a força da organização do povo e conhecer as ocupações que tanto resistiram e lutaram para conquistar suas moradias. Conta com 18 filmes, produzidos em Minas Gerais, Rio Grande do Norte, Ceará, São Paulo e Rio Grande do Sul, além do filme sobre os 20 anos do movimento, produzido pela Comissão Nacional de Comunicação do MLB. 
+            </p>
+
+            <a
+            href="acervo.html"
+            class="btn btn--center"
+            >Acesse os filmes da mostra acervo</a
+          >
+        </div>
+
+            <div class="text-mostras__bar-box">
+              <span class="text-mostras__bar">&nbsp;</span>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">Aniversário e Castigo</h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 9'42 — 2017 — MG
+
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                A Rua é Pública
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 9' — 2013 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                A Última Noite na Ocupação Valdete Guerra	
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Coletivo Nigéria, 3'32 — 2015 — CE
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Carolinas
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Chris Martins e Gisele Bossi, 2017 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Casa com Parede
+
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Dênia Cruz, 16' — 2019 — RN
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Casa na Marra 
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Thiago Fernandes, 20' — 2016 — SP
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Conte Isso Àqueles que Dizem que Fomos Derrotados
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Aiano Benfica, Camila Bastos, Cris Araujo e Pedro Maia de Brito, 23' — 2018 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Izidora: Junto e Misturado
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Dayanne Nessa, Edelço Vicente, Rodrigo de Freitas, Viguxo, 22' — 2015 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Lanceiros Negros Estão Vivos - Uma Ocupação por Moradia e Liberdade
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Tiago Rodrigues; Jefferson Pinheiro, 80' — 2016 — RS
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Leningrado, Linha 41
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Dênia Cruz, 20' — 2016 — RN
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Menino Mitou na Bike Sem Freio e Foi Brincar de Casinha
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 8' — 2017 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Na Missão, com Kadu
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Aiano Bemfica, Kadu Freitas, Pedro Maia de Brito, 28' — 2016 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Ocupar, resistir e construir 
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Dayanne Naessa, Edinho Vieira, Juliano Vitral, Roberta Von Randow, 14' — 2016 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Palmilha
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 10' — 2018 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Quem Luta, Conquista!
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Coletivo de Comunicação do MLB, 66' — 2020 — BRA
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Você Faria Isso por um Papagaio? — Papagaio Verde
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 8' — 2017 — MG
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Zaga de bonecas
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Anderson Lima, 8' — 2014 — MG
+              </h5>
+            </div>
+          </div>
+
+      <div id="homenagem" class="row">
+        <section class="banner-mostras">
+          <div class="banner-mostras__content banner-mostras__content--3">
+           
+            <h1 class="banner-mostras__heading">Programa Homenagem</h1>
+          </div>
+        </section>
+        <div class="text-mostras">
+          <div class="text-mostras__text-box">
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Olhar para a luta pela moradia no presente é também compreender como o conflito pela terra sempre foi um marcador para o Brasil, cuja história é envolta não só em roubos e expropriações, mas também em organização e conquista. Enquanto uma das condições primeiras para possibilidade de vida, reflexos da luta pela terra se repetem na trajetória de inúmeros brasileiros e brasileiras, seja nas periferias de centros urbanos ou nas ocupações de grandes latifúndios. As recorrências? Famílias simples, solidárias com o coletivo, que tentam sobreviver um dia após o outro e garantir um futuro melhor para si e para os seus.
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Essas semelhanças podem ser encontradas nos três filmes que compõem o Programa Homenagem. A sessão propõe um mergulho no passado recente do país pelos olhares de Tetê Moraes e Carlos Pronzato, militantes e cineastas fundamentais para a recuperação de imagens produzidas em contexto de luta. 
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              O percurso abrange tanto a vida de Rose, militante do Movimento dos Trabalhadores Rurais Sem Terra, quanto a história dos despejados de Pinheirinho, truculenta operação de reintegração de posse realizada em janeiro de 2012. É, duplamente, uma sessão de revolta e legado. 
+            </p>
+            <p class="programacao__text-resume programacao__text-resume--1">
+              Uma possível resposta do cinema aos injustos processos históricos que conformaram o país e a sociedade que hoje temos.
+            </p>
+
+            <a
+            href="mostras/homenagem.html"
+            class="btn btn--center"
+            >Acesse os filmes do programa homenagem</a
+          >
+          </div>
+
+            <div class="text-mostras__bar-box">
+              <span class="text-mostras__bar">&nbsp;</span>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">Pinheirinho — Tiraram Minha Casa, Tiraram Minha Vida </h3>
+              <h5 class="text-mostras__text-tec">
+                Carlos Pronzato, 48' — 2012
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Terra para Rose
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Tetê Moraes, 83' — 1987
+              </h5>
+            </div>
+
+            <div class="text-mostras__film-box">
+              <h3 class="text-mostras__heading-film">
+                Fruto da Terra	
+              </h3>
+              <h5 class="text-mostras__text-tec">
+                Tetê Moraes, 15' — 2008
+              </h5>
+            </div>
+          </div>
+        </section> -->
+      </div>
+    </main>
+
+    
+    <footer class="footer">
+      <div class="footer__text-box">
+        <p class="footer__text"> Realização </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--1">
+        <img src="img/mlb-logo-wht.png" alt="Logo MLB" class="footer__logo">
+      </div>
+      <div class="footer__text-box">
+        <p class="footer__text"> Apoio </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--2"> 
+        <img src="img/embauba-logo-wht.png" alt="Logo Embauba" class="footer__logo">
+      </div>
+      <div class="footer__email-box">
+        <p class="footer__email">contato@mostra-lona.com.br</p>
+      </div>
+    </footer>
+  </body>
+</html>

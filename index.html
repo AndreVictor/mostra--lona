@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37853607-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37853607-3');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mostra cinemas e territórios MLB" />
+    <meta
+      name="keywords"
+      content="cinema, mostra, luta, mlb, ocupação, territorios, guerrilha, cinema latino americano, cinema do sul"
+    />
+    <meta name="author" content="André Victor" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700;800;900&family=Saira:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style20200703131108.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/lona-favicon.png" />
+
+    <title>LONA — Mostra Cinemas e Territórios</title>
+  </head>
+  <body>
+    <section class="header-top__nav-top">
+      <div class="header-top__text">
+        <p>
+          Realização
+          <a href="https://www.mlbbrasil.org/" class="header-top__mlb-link"
+            >MLB - Movimento de Luta nos Bairros, Vilas e Favelas</a
+          >
+        </p>
+      </div>
+      <div class="header-top__icons-box">
+        <a href="https://www.instagram.com/movimento_de_luta_nos_bairros/" class="header-top__icons-box--icon fab fa-instagram"></a>
+        <a href="https://pt-br.facebook.com/mlbrio/" class="header-top__icons-box--icon fab fa-facebook-f"></a>
+      </div>
+    </section>
+
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__logo-box">
+          <a href="index.html" class="navigation__logo-text">LONA</a>
+        </div>
+        <div class="navigation__bar-box">
+          <span class="navigation__bar">&nbsp;</span>
+        </div>
+        <div class="navigation__mostra">
+          <span class="navigation__mostra--1">Mostra Cinemas </span>
+          <span class="navigation__mostra--2">e Territórios </span>
+        </div>
+        <ul class="navigation__nav">
+          <li class="navigation__item">
+            <a href="acervo.html" class="navigation__link">acervo</a>
+          </li>
+          <li class="navigation__item">
+            <a href="programacao.html" class="navigation__link">debates</a>
+          </li>
+          <li class="navigation__item">
+            <a href="lona-abriga.html" class="navigation__link">lona abriga</a>
+          </li>
+          <li class="navigation__item">
+            <input type="checkbox" class="navigation__dropdown-checkbox" id="dropdown-toggle">
+            <label for="dropdown-toggle" class="navigation__dropdown-button">
+            <span class="navigation__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down dropdown-icon"></i></span>
+            </label>
+                <ul class="navigation__dropdown-nav" id="dropdown">
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras.html" class="navigation__dropdown-link">mostra atravessamentos</a>
+                  </li>
+                  <li class="navigation__dropdown-item">
+                    <a href="mostras/homenagem.html" class="navigation__dropdown-link">programa homenagem</a>
+                  </li>
+                </ul>
+          </li>
+          <li class="navigation__item">
+            <a href="campanha.html" class="navigation__link">rede solidária</a>
+          </li>
+          <li class="navigation__item">
+            <a href="sobre.html" class="navigation__link">sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation-mobile">
+        <input type="checkbox" class="navigation-mobile__checkbox" id="navi-toggle">
+  
+        <label for="navi-toggle" class="navigation-mobile__button">
+          <span class="navigation-mobile__icon">&nbsp;</span>
+        </label>
+  
+        <div class="navigation-mobile__background">&nbsp;</div>
+
+        <div class="navigation-mobile__nav">
+          <ul class="navigation-mobile__list">
+            <li class="navigation-mobile__item">
+              <a href="acervo.html" class="navigation-mobile__link">acervo</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="programacao.html" class="navigation-mobile__link">debates</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="lona-abriga.html" class="navigation-mobile__link">lona abriga</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="campanha.html" class="navigation-mobile__link">rede solidária</a>
+            </li>
+            <li class="navigation-mobile__item">
+              <a href="sobre.html" class="navigation-mobile__link">sobre</a>
+            </li>
+
+                        
+            <li class="navigation-mobile__item">
+              <input type="checkbox" class="navigation-mobile__dropdown-checkbox" id="dropdown-mobile-toggle">
+              <label for="dropdown-mobile-toggle" class="navigation-mobile__dropdown-button">
+              <span class="navigation-mobile__dropdown">mostras anteriores &nbsp;<i class="fas fa-caret-down navigation-mobile__dropdown-icon"></i></span>
+              </label>
+                  <ul class="navigation-mobile__dropdown-nav">
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras.html" class="navigation-mobile__dropdown-link">mostra atravessamentos</a>
+                    </li>
+                    <li class="navigation-mobile__dropdown-item">
+                      <a href="mostras/homenagem.html" class="navigation-mobile__dropdown-link">programa homenagem</a>
+                    </li>
+                  </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source
+              src="img/vid/lona_conteisso_banner1_1.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        
+        <!-- BANNER PÁGINA PRINCIPAL -->
+
+        <div class="banner__text">
+          <h3 class="banner__text-sessao">\ DISPONÍVEL</h3>
+          <h1 class="banner__text-film">Mostra Acervo</h1>
+          <h2 class="banner__text-director">Nesta aliança entre as lutas do MLB e o cinema, realizamos e assistimos diversos filmes <br/> sendo produzidos junto às ocupações e as lutas travadas pelo movimento em todo o Brasil.</h2>        
+        </div>
+
+        <div class="banner__btn">
+          <a href="acervo.html" class="btn">Assista a mostra</a>
+        </div>
+        <h2 class="banner__text-director">&nbsp;</h2>
+        <h2 class="banner__text-director">&nbsp;</h2>
+        <h2 class="banner__text-director">&nbsp;</h2>
+      </section>
+      
+
+      <!-- <section class="wrapper">
+ 
+          <div class="carousel">
+            <div class="inner">
+              
+              <div class="slide active">
+                <div class="slide-text">
+                  <h3 class="slide-text__text-sessao">\ sex, 26 — jun, 16h</h3>
+                  <h2 class="slide-text__text-director">DEBATE \ Live — Encerramento</h2>
+                  <h1 class="slide-text__text-film">Alberto Alvares, Genito Gomes Kaiowá, Jhon Nara Gomes e Edgar Kanaykõ
+                    </h1>
+                  <div class="banner__btn">
+                    <a href="programacao.html" class="btn">Assista ao debate</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-text">
+                  <h3 class="slide-text__text-sessao">\ qui, 25 — jun</h3>
+                  <h2 class="slide-text__text-director">Sessão de Encerramento</h2>
+                  <h1 class="slide-text__text-film">ATL 2017 – Acampamento Terra Livre<br/>
+                    Guardiões da Memória <br/>
+                    O Último Sonho
+                    </h1>
+                  <div class="banner__btn">
+                    <a href="sessoes/encerramento.html" class="btn">Assista a sessao</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+<!--             <div class="arrow arrow-left"></div>
+            <div class="arrow arrow-right"></div> -->
+          <!-- </div> -->
+
+      <!-- </section> -->
+
+      <section class="lancamentos">
+        <div class="row">
+          <div class="sessoes__header">
+            <a href="acervo.html" class="sessoes__heading">Lançamentos do acervo</a>
+            <div class="sessoes__header-barra">&nbsp;</div>
+            <a href="acervo.html" class="btn btn--mostras">Veja todos os filmes <span>&rarr;</span> </a>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="card">
+              <a
+                href="acervo/izidora-dias-de-luta.html"
+                class="card__content card__content--18-izidora-dias-de-luta"
+              >
+                <h3 class="card__heading-film card__heading-film--acervo">
+                  Izidora: Dias de Luta, Noites de Resistência
+                </h3>
+                <h5 class="card__text-tec card__text-tec--acervo">
+                  Edinho Veira, Raquel Rodrigues e Sthefany de Paula <br />
+                  30" — 2020
+                </h5>
+                <p class="card__text-tec card__text-tec--sinopse">
+                  Os olhares individuais dos moradores das ocupações da Izidora, narram de forma coletiva os fatos históricos do maior conflito fundiário da América Latina, com mais de 30 mil pessoas e 8 mil famílias. Realizado por três jovens moradores de ocupações urbanas, o filme "Izidora: dias de luta, noites de resistência" é fruto de oficinas realizadas pelo projeto Ocupa Mídia em parceria com o MLB (Movimento de Luta nos Bairros, Vilas e Favelas).
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="card">
+              <a
+                href="acervo/memorias-de-izidora.html"
+                class="card__content card__content--19-memorias-de-izidora"
+              >
+                <h3 class="card__heading-film card__heading-film--acervo">
+                  Memórias de Izidora
+                </h3>
+                <h5 class="card__text-tec card__text-tec--acervo">
+                  Vilma da Silveira, João Victor Silveira de Paula, Kadu de Freitas, Edinho Vieira e Douglas Resende <br />
+                  54" — 2016/2020
+                </h5>
+                <p class="card__text-tec card__text-tec--sinopse">
+                  No cotidiano de uma ocupação urbana espontânea autoconstruída na Região Metropolitana de Belo Horizonte e conhecida como Izidora, subsiste uma comunidade de cinema formada por uma pluralidade de sujeitos que filmam a vida política e cotidiana daquele território, salvaguardando a sua memória coletiva. Este filme é uma montagem dessa memória audiovisual na perspectiva de quatro personagens cineastas.
+                </p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sessoes">
+      
+        <div class="row">
+          <div class="sessoes__header">
+            <a href="acervo.html" class="sessoes__heading">Mostra Acervo</a>
+            <div class="sessoes__header-barra">&nbsp;</div>
+            <a href="acervo.html" class="btn btn--mostras">Veja todos os filmes <span>&rarr;</span> </a>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a
+                href="acervo/a-rua-e-publica.html"
+                class="card__content card__content--1-rua-publica"
+              >
+                <h3 class="card__heading-film card__heading-film--acervo">
+                  A rua é pública
+                </h3>
+                <h5 class="card__text-tec card__text-tec--acervo">
+                  Anderson Lima <br />
+                  9" — 2013
+                </h5>
+                <p class="card__text-tec card__text-tec--sinopse">
+                  Eles tinham a bola, o time e nenhum lugar pra jogar. Sem campo, quadra ou rua, algumas crianças do assentamento Eliana Silva, não acham que disputa de pênaltis seja uma grande aventura, mas isso está prestes a mudar.
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a href="acervo/ultima-noite.html" class="card__content card__content--2-ultima-noite">
+                <h3 class="card__heading-film card__heading-film--acervo">
+                  A ultima noite na ocupação valdete guerra
+                </h3>
+                <h5 class="card__text-tec">
+                  Coletivo Nigéria
+                  <br />
+                  3"
+                </h5>
+                <p class="card__text-tec card__text-tec--sinopse">
+                  Cerca de 200 famílias ocuparam um prédio abandonado há 4 anos pelos Correios. Organizadas pelo Movimento de Luta nos Bairros, Vilas e Favelas (MLB), várias mulheres e crianças acamparam por 15 dias no local com o objetivo de chamar atenção do Poder Público e conquistar o direito à moradia digna.
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <a href="acervo/aniversario-e-castigo.html" class="card__content card__content--3-aniversario-e-castigo">
+                <h3 class="card__heading-film card__heading-film--acervo">
+                  Aniversário e Castigo
+                </h3>
+                <h5 class="card__text-tec card__text-tec--acervo">
+                  Anderson Lima <br />
+                  2017
+                </h5>
+                <p class="card__text-tec card__text-tec--sinopse">
+                  Imaginem que uma festa surpresa está sendo organizada para comemorar o aniversário de um menino que está de castigo! Um plano de fuga talvez seja a solução. Curta produzido na Ocupação Vitória, que faz parte da Izidora, região metropolitana de Belo Horizonte, como resultado da OPALA 
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <section class="banner-rede u-margin-buttom-medium">
+          <div class="row">
+            <div class="col-1-of-4">
+                <img src="img/mlb-logo-wht.png" alt="" class="banner-rede__logo">
+            </div>
+            <div class="col-3-of-4">
+              <h2 class="banner-rede__heading">
+                Ajude as famílias sem teto durante a quarentena
+              </h2>
+              <p class="banner-rede__text">
+                ​O <a class="banner-rede__text banner-rede__text--link" href="https://www.mlbbrasil.org/">Movimento de Luta nos Bairros, Vilas e Favelas (MLB)</a> organiza há vários anos centenas de famílias sem-teto no país inteiro para lutar pelo direito humano de morar dignamente.
+                A maioria dessas famílias são chefiadas por trabalhadores informais e, por isso, serão as primeiras a sofrerem as consequências econômicas da quarentena decretada devido à crise do coronavírus. 
+                O governo Bolsonaro deu as costas à essas pessoas, que agora precisam da nossa solidariedade para sobreviverem.
+              </p>
+              <a href="https://www.mlbbrasil.org/redesolidaria" class="btn btn--branco">contribua com a campanha!</a>
+            </div>
+          </div>
+        </section>
+        
+        <div class="row">
+
+          <div class="sessoes__header">
+            <a href="mostras.html" class="sessoes__heading">Mostras Anteriores</a>
+            <div class="sessoes__header-barra">&nbsp;</div>
+            <a href="mostras.html" class="btn btn--mostras">Veja todos os filmes <span>&rarr;</span> </a>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="card">
+              <a
+                href="sessoes/abertura.html"
+                class="card__content card__content--1"
+              >
+                <h4 class="card__heading-sessao">
+                  <p class="card__heading-sessao--barra">\</p>
+                  confira o histórico
+                </h4>
+
+                <h3 class="card__heading-film">Mostra atravessamentos</h3>
+                <h5 class="card__text-tec card__text-tec--acervo">
+                </h5>
+
+                <p class="card__text-tec card__text-tec--sinopse">
+                  Brasil, 2020. Isto não é um roteiro de ficção científica.
+                  <br/><br/>
+                  Ameaças de catástrofes sem precedentes, que de certo modo acompanham os contornos geopolíticos de todo o globo, misturam-se ao cinismo brutal de uma política mortífera que brinca com o valor da vida. No centro desse labirinto desolador, dessa encruzilhada política que consome nossa história, sobrepondo-se às muitas camadas de violência que a memória estende, encontra-se a questão primordial do território.
+                  <br/><br/>
+                  Territórios que faltam, contrariando o direito fundamental de morar...
+                </p>
+      
+              </a>
+            </div>
+          </div>
+
+        <div class="col-1-of-2">
+          <div class="card">
+            <a
+              href="sessoes/23-sabado.html"
+              class="card__content card__content--1-fruto-da-terra"
+            >
+              <h4 class="card__heading-sessao">
+                <p class="card__heading-sessao--barra">\</p>
+                confira o histórico
+              </h4>
+
+              <h3 class="card__heading-film">Programa Homenagem</h3>
+              <h5 class="card__text-tec card__text-tec--acervo">
+              </h5>
+
+              <p class="card__text-tec card__text-tec--sinopse">
+                Olhar para a luta pela moradia no presente é também compreender como o conflito pela terra sempre foi um marcador para o Brasil, cuja história é envolta não só em roubos e expropriações, mas também em organização e conquista. Enquanto uma das condições primeiras para possibilidade de vida, reflexos da luta pela terra se repetem na trajetória de inúmeros brasileiros e brasileiras, seja nas periferias de centros urbanos ou nas ocupações de grandes latifúndios. As recorrências? Famílias simples, solidárias com o coletivo, que tentam sobreviver um dia após o outro e garantir um futuro melhor para si e para os seus.
+                <br/><br/>
+                Essas semelhanças podem ser encontradas nos três filmes que compõem o Programa Homenagem...
+              </p>           
+            </a>
+          </div>
+        </div>
+      </div>   
+
+    
+
+    </main>
+    
+
+    <footer class="footer">
+      <div class="footer__text-box">
+        <p class="footer__text"> Realização </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--1">
+        <img src="img/mlb-logo-wht.png" alt="Logo MLB" class="footer__logo">
+      </div>
+      <div class="footer__text-box">
+        <p class="footer__text"> Apoio </p>
+      </div>
+      <div class="footer__logo-box footer__logo-box--2"> 
+        <img src="img/embauba-logo-wht.png" alt="Logo Embauba" class="footer__logo">
+      </div>
+      <div class="footer__email-box">
+        <p class="footer__email">contato@mostra-lona.com.br</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slider.js"></script>
+    
+  </body>
+</html>
